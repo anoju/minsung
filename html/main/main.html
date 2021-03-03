@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta content="IE=edge" http-equiv="X-UA-Compatible">
+<meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width" />
+<title>(주)이에프텍</title>
+<link href="../static/css/reset.css" rel="stylesheet" />
+<link href="../static/css/common.css" rel="stylesheet" />
+<link href="../static/css/contents.css" rel="stylesheet" />
+<script type="text/javascript" src="../static/js/common.js"></script>
+<script type="text/javascript" src="../static/js/ui.js"></script>
+<!--[if lt IE 9]>
+    <script type="text/javascript">
+        document.createElement("header");
+        document.createElement("nav");
+        document.createElement("section");
+        document.createElement("article");
+        document.createElement("footer");
+    </script>
+<![endif]-->
+</head>
+<body>
+
+	<div class="mainPopup" style="display:none;">
+		<div class="bg"></div>
+		<div class="popCont">
+			<img src="이미지이미지" alt="" />
+			<div class="btn">
+				<div class="checkbox">
+					<input type="checkbox" id="todayCheck" /><label for="todayCheck">오늘하루 더이상 이창을 열지 않습니다.</label>
+				</div>
+				<a href="#" class="close">닫기</a>
+			</div>
+		</div>
+	</div>
+
+	<!-- 헤더영역 -->
+	<!-- 메인만 main 클래스 적용-->
+	<!-- <header id="headerWrap" data-include="../include/header.html" class="main"> -->
+	<header id="headerWrap" class="main">
+		<div id="header">
+			<div class="innerBox">
+				<h1 class="logo"><a href="../main/main.html">이에프텍</a></h1>
+				<div class="gnbWrap">
+					<nav class="gnb">
+						<div>
+							<a href="../aboutus/introduce.html">ABOUT US</a>
+							<ul>
+								<li><a href="../aboutus/introduce.html">소개</a></li>
+								<li><a href="../aboutus/history.html">연혁</a></li>
+								<li><a href="../aboutus/certification.html">인증</a></li>
+								<li><a href="../aboutus/location.html">오시는길</a></li>
+							</ul>
+						</div>
+						<div>
+							<a href="../capabilities/mold_process.html">CAPABILITIES</a>
+							<ul>
+								<li><a href="../capabilities/mold_process.html">Mold</a></li>
+								<li><a href="../capabilities/injection_process.html">Injection</a></li>
+								<li><a href="../capabilities/value_process.html">Value added Service</a></li>
+							</ul>
+						</div>
+						<div>
+							<a href="../qprogram/introduce.html">Q-PROGRAM</a>
+							<ul>
+								<li><a href="../qprogram/introduce.html">Q-Program소개</a></li>
+								<li><a href="../qprogram/q_basic.html">Q-Basic</a></li>
+								<li><a href="../qprogram/q_advance.html">Q-Advance</a></li>
+								<li><a href="../qprogram/q_pro.html">Q-Pro</a></li>
+								<li><a href="../qprogram/q_mass.html">Q-Mass</a></li>
+							</ul>
+						</div>
+						<div>
+							<a href="../quotation/quotation_list.html">QUOTATION</a>
+							<ul>
+								<li><a href="../quotation/quotation_list.html">견적신청</a></li>
+								<li><a href="../quotation/q_basic.html">Q-Basic 견적신청</a></li>
+								<li><a href="../quotation/q_advance.html">Q-Advance 견적신청</a></li>
+								<li><a href="../quotation/q_pro.html">Q-Pro 견적신청</a></li>
+								<li><a href="../quotation/q_pro.html">Q-Mass 견적신청</a></li>
+							</ul>
+						</div>
+					</nav>
+					<div class="language">
+						<a href="#" class="on">KO</a>
+						<a href="#">EN</a>
+					</div>
+				</div>
+			</div>
+		
+			<div class="asideGnb">
+				<a href="#" class="menuOpenClose"><i>메뉴열고닫기</i></a>
+				<a href="#" class="menu"><span>MENU</span></a>
+				<a href="#" class="quotation"><span>QUOTATION</span></a>
+		
+				<div class="gnbViewBox">
+					<div class="menuView">
+						<h2 class="hidden">메뉴</h2>
+		
+						<h3><a href="#">ABOUT US <i class="ico"></i></a></h3>
+						<ul>
+							<li><a href="../aboutus/introduce.html">소개</a></li>
+							<li><a href="../aboutus/history.html">연혁</a></li>
+							<li><a href="../aboutus/certification.html">인증</a></li>
+							<li><a href="../aboutus/location.html">오시는길</a></li>
+						</ul>
+		
+						<h3><a href="#">CAPABILITIES <i class="ico"></i></a></h3>
+						<ul>
+							<li><a href="../capabilities/mold_process.html">Mold</a></li>
+							<li><a href="../capabilities/injection_process.html">Injection</a></li>
+							<li><a href="../capabilities/value_process.html">Value added Service</a></li>
+						</ul>
+						
+						<h3><a href="#">Q-PROGRAM <i class="ico"></i></a></h3>
+						<ul>
+							<li><a href="../qprogram/introduce.html">Q-Program소개</a></li>
+							<li><a href="../qprogram/q_basic.html">Q-Basic</a></li>
+							<li><a href="../qprogram/q_advance.html">Q-Advance</a></li>
+							<li><a href="../qprogram/q_pro.html">Q-Pro</a></li>
+							<li><a href="../qprogram/q_mass.html">Q-Mass</a></li>
+						</ul>
+						
+						<h3><a href="#">Quotation <i class="ico"></i></a></h3>
+						<ul>
+							<li><a href="../quotation/quotation_list.html">견적신청</a></li>
+							<li><a href="../quotation/q_basic.html">Q-Basic 견적신청</a></li>
+							<li><a href="../quotation/q_advance.html">Q-Advance 견적신청</a></li>
+							<li><a href="../quotation/q_pro.html">Q-Pro 견적신청</a></li>
+							<li><a href="../quotation/q_pro.html">Q-Mass 견적신청</a></li>
+						</ul>
+					</div>
+		
+					<div class="quotationView">
+						<h2>QUOTATION</h2>
+						<ul>
+							<li class="ico1"><a href="../quotation/q_basic.html">Q-Basic<i></i></a></li>
+							<li class="ico2"><a href="../quotation/q_advance.html">Q-Advance<i></i></a></li>
+							<li class="ico3"><a href="../quotation/q_pro.html">Q-Pro<i></i></a></li>
+							<li class="ico4"><a href="../quotation/q_pro.html">Q-Mass<i></i></a></li>
+						</ul>
+						<a href="../quotation/quotation_list.html" class="btn">견적신청</a>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="headerBg"></div>
+	</header>
+	<!-- //헤더영역 -->
+
+	<!-- 컨텐츠 영역 -->
+	<!-- main 페이지만 클래스 main 추가-->
+	<section id="container" class="main">
+		<section class="mainSec01">
+			<div class="mainSecNav">
+				<div class="nav"><span class="on">1</span><span>2</span><span>3</span><span>4</span></div>
+				<div class="scroll">
+					<span></span>
+					<p>Scroll</p>
+				</div>
+			</div>
+
+			<div class="visualBg">
+				<div class="on">
+					<span 
+						data-pc-image="../static/images/main/img_visual1.png"
+						data-mo-image="../static/images/main/img_visual1_m.png"
+					></span>
+				</div>
+				<div>
+					<span 
+						data-pc-image="../static/images/main/img_visual2.png"
+						data-mo-image="../static/images/main/img_visual2_m.png"
+					></span>
+				</div>
+			</div>
+			<div class="innerBox">
+				<!-- 첫번째 이미지 텍스트-->
+				<div class="textBox on">
+					<h1 data-animation="fadeInUp">The first creation of <br />Q-PROGRAM</h1>
+					<p class="text" data-animation="fadeInDown" data-delay="200">최고의 표준화된 금형 제작 및 사출 성형 Q-Program 최초 개발</p>
+				</div>
+
+				<!-- 두번째 이미지 텍스트-->
+				<div class="textBox">
+					<h1 data-animation="fadeInUp">The first creation of <br />Q-PROGRAM222</h1>
+					<p class="text" data-animation="fadeInDown" data-delay="200">최고의 표준화된 금형 제작 및 사출 성형 Q-Program 최초 개발</p>
+				</div>
+
+				<div class="arrow">
+					<a href="#" class="prev">이전 이미지</a>
+					<a href="#" class="next">다음 이미지</a>
+				</div>
+			</div>
+		</section>
+
+		<section class="mainSec02">
+			<div class="mainSecNav">
+				<div class="nav"><span>1</span><span class="on">2</span><span>3</span><span>4</span></div>
+				<div class="scroll">
+					<span></span>
+					<p>Scroll</p>
+				</div>
+			</div>
+			<div class="innerBox">
+				<div class="textBox" data-animation="fadeInUp">
+					<h1>CAPABILITIES</h1>
+					<p>최첨단 금형 / 사출 전문기업 이에프텍은 지속적인 연구개발과 축적된 기술력을 바탕으로 <br />한 표준화된 ‘Q-PROGRAM’ 을 통해 최상의 제품을 생산합니다.</p>
+				</div>
+				<p class="img" data-animation="fadeInUp">
+					<img src="" alt="" data-pc-image="../static/images/main/img_sec02.png" data-mo-image="../static/images/main/img_sec02_m.png" />
+				</p>
+			</div>
+		</section>
+
+		<section class="mainSec03">
+			<div class="mainSecNav">
+				<div class="nav"><span>1</span><span>2</span><span class="on">3</span><span>4</span></div>
+			</div>
+			<div class="innerBox">
+				<h1 data-animation="fadeInUp">Q Program</h1>
+				<p class="text" data-animation="fadeInUp">최첨단 금형 / 사출 전문기업 이에프텍은 지속적인 연구개발과 축적된 기술력을 바탕으로 <br />한 표준화된 ‘Q-PROGRAM’ 을 통해 최상의 제품을 생산합니다.</p>
+
+				<div class="arrowBtn">
+					<a href="#" class="prev">이전</a>
+					<a href="#" class="next">다음</a>
+				</div>
+
+				<div class="slickPlay">
+					<p class="status"><span>01</span> / 04</p>
+					<a href="#" class="play">시작</a>
+					<a href="#" class="pause">멈춤</a>
+				</div>
+				<div class="slickWrap" data-animation="fadeInUp">
+					<div>
+						<a href="#">
+							<h2>ROBOTORI <br />삼각셀</h2>
+							<p class="img"><img src="../static/images/main/img_sec03_1.png" alt="" /></p>
+							<span class="link">Q-Basic<i></i></span>
+						</a>
+					</div>
+					<div>
+						<a href="#">
+							<h2>BRONCO <br />BACK SHELL</h2>
+							<p class="img"><img src="../static/images/main/img_sec03_2.png" alt="" /></p>
+							<span class="link">Q-Advance<i></i></span>
+						</a>
+					</div>
+					<div>
+						<a href="#">
+							<h2>ROBOTORI <br />삼각셀</h2>
+							<p class="img"><img src="../static/images/main/img_sec03_1.png" alt="" /></p>
+							<span class="link">Q-Pro<i></i></span>
+						</a>
+					</div>
+					<div>
+						<a href="#">
+							<h2>BRONCO <br />BACK SHELL</h2>
+							<p class="img"><img src="../static/images/main/img_sec03_2.png" alt="" /></p>
+							<span class="link">Q-Mass<i></i></span>
+						</a>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="mainSec04">
+			<div class="mainSecNav">
+				<div class="nav"><span>1</span><span>2</span><span>3</span><span class="on">4</span></div>
+			</div>
+			<div class="textBox">
+				<div class="innerBox">
+					<h1 data-animation="fadeInUp">EF-TEK Since2008</h1>
+					<p class="text" data-animation="fadeInUp">EF-TEK is the creator of special Q-program, and <br />manufactures world class products. </p>
+					<div class="history" data-animation="fadeInUp">
+						<dl>
+							<dt>2013. 01</dt>
+							<dd>㈜이에프텍 법인변경 및 경북 칠곡군 북삼읍 <br />칠곡대로 297-13 공장이전</dd>
+						</dl>
+						<dl>
+							<dt>2012. 01</dt>
+							<dd>경북 칠곡군 북삼읍 칠곡대로 84-3 <br />공장 이전.</dd>
+						</dl>
+						<dl>
+							<dt>2012. 11</dt>
+							<dd>㈜대신정보통신 협력업체 등록</dd>
+						</dl>
+						<dl>
+							<dt>2010. 01</dt>
+							<dd>구미국가산업단지 제4단지 공장 이전.</dd>
+						</dl>
+					</div>
+					<a href="#" class="link">링크 보내기</a>
+				</div>
+			</div>
+			<div class="textBoxType2">
+				<div class="innerBox">
+					<div class="box1">
+						<h2 data-animation="fadeInUp">QUOTATION</h2>
+						<p class="text">편리하게 견적을 신청해 보세요</p>
+						<a href="#" class="link">링크 보내기</a>
+					</div>
+					<div class="box2">
+						<h2 data-animation="fadeInUp">LOCATION</h2>
+						<ul data-animation="fadeInUp">
+							<li><strong>Address</strong>297-13, Chilgok-daero, Buksam-eup, Chilgok-gun, <br />Gyeongsangbuk-do, KOREA</li>
+							<li><strong>TEL</strong>82-54-972-9579</li>
+							<li><strong>EMAIL</strong>ghpark@eftek.co.kr</li>
+						</ul>
+						<a href="#" class="link">링크 보내기</a>
+					</div>
+				</div>
+			</div>
+		</section>
+	</section>
+	<!-- //컨텐츠 영역 -->
+
+	<!-- 하단 영역 -->
+	<!-- <footer id="footerWrap" data-include="../include/footer.html"> -->
+	<footer id="footerWrap">
+		<div id="footer">
+			<div class="innerBox">
+				<a href="#" class="btnTop">맨위로</a>
+				
+				<h1>CONTACT INFO</h1>
+				<p class="address">297-13, Chilgok-daero, Buksam-eup, Chilgok-gun, Gyeongsangbuk-do, KOREA<br />82-54-972-9579</p>
+				<p class="email"><a href="mailto:ghpark@eftek.co.kr">ghpark@eftek.co.kr</a></p>
+
+				<p class="copy">EF-TEK. ALL RIGHT RESERVED.</p>
+			</div>
+		</div>
+	</footer>
+	<!-- //하단 영역 -->
+</body>
+</html>
