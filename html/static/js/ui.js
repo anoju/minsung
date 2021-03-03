@@ -97,35 +97,27 @@ function main(){
 	}
 
 	function main1(){
-		let idx = 0;
-		const length = $('.mainSec01 .visualBg > div').length -1;
-		const delay = 5000;
-		let time = setInterval(timer, delay);
-
-		$('.mainSec01 .arrow').mouseenter(function(){
-			clearInterval(time);
-		}).mouseleave(function(){
-			time = setInterval(timer, delay);
-		})
-
-		$('.mainSec01 .arrow > a').click(function(){
-			clearInterval(time);
-			let btnIdx = $(this).index();
-			if(btnIdx == 0){ 
-				idx == 0 ? idx = length : idx--;
-			} else {
-				idx == length ? idx = 0 : idx++;
+		$(window).resize(function(){
+			var ratio = {v:16,h:9}
+			var $winW = $(window).width();
+			var $visual = $('.mainSec01 .visualBg');
+			var $video = $visual.find('video');
+			var $visualW = $visual.outerWidth();
+			var $visualH = $visual.outerHeight();
+			var $videoW = ($visualH/ratio.h)*ratio.v;
+			var $videoH = ($visualW/ratio.v)*ratio.h;
+			if($winW < $videoW){
+				$video.css({
+					'width':$videoW+2,
+					'height':'100%'
+				});
+			}else{
+				$video.css({
+					'width':'100%',
+					'height':$videoH+2
+				});
 			}
-			$('.mainSec01 .visualBg > div').eq(idx).addClass('on').siblings().removeClass('on')
-			$('.mainSec01 .textBox').eq(idx).addClass('on').siblings().removeClass('on')
-			return false;
-		})
-
-		function timer(){
-			idx == length ? idx = 0 : idx++;
-			$('.mainSec01 .visualBg > div').eq(idx).addClass('on').siblings().removeClass('on')
-			$('.mainSec01 .textBox').eq(idx).addClass('on').siblings().removeClass('on')
-		}
+		});
 	}
 
 	function main3(){
@@ -177,6 +169,8 @@ function main(){
 			return false;
 		})
 	}
+
+	$(window).resize();
 }
 
 function imgChange(){

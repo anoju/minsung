@@ -1,0 +1,147 @@
+@import url('lib/jquery-ui-1.10.4.custom.min.css');
+@import url('lib/swiper.css');
+
+/* ==============================
+ * header
+ * ============================== */
+#headerWrap{
+    .headerBg{display:none;position:fixed;top:80px;left:0;right:0;z-index:10;height:289px;border-bottom:1px solid #e5e5e5;background:rgba(255,255,255,1)}
+}
+#header{ 
+    position:fixed;top:0;left:0;z-index:100;width:100%;border-bottom:1px solid #e5e5e5;background:rgba(255,255,255,1);
+    .innerBox{height:79px;padding:0;}
+    .logo{
+        position:absolute;top:50%;left:0;transform:translateY(-50%);
+        a{display:block;width:108px;height:39px;font-size:0;background:url('../images/common/logo.png') no-repeat center center;background-size:contain;}
+    }
+}
+.gnbWrap{
+    .gnb{
+        display:flex;height:80px;margin-left:24.2857%;transition:all .3s ease;
+        > div{
+            position:relative;padding:0 42px;
+            > a{
+                position:relative;display:flex;height:100%;align-items:center;font-size:18px;color:#000;font-weight:bold;transition:all .3s ease;
+                &:hover,
+                &.on{color:#ffc001;}
+                &:after{
+                    content:'';display:block;position:absolute;left:50%;bottom:0;width:0;height:2px;background:#ffc001;transition:0.3s ease;
+                }
+                &:hover:after,
+                &.on:after{left:0;width:100%;}
+            }
+        }
+        ul{display:none;position:absolute;top:80px;left:0;width:100%;padding:26px 0;}
+        li{
+            +li{margin-top:20px;}
+            a{
+                display:block;font-size:16px;color:#9ea09f;font-weight:bold;text-align:center;
+                &.on,
+                &:hover{color:#ffc001;}
+            }
+        }
+    }
+    .util{
+        display:flex;position:absolute;top:0;right:0;bottom:0;align-items:center;transition:all .3s ease;
+        &>a{font-size:14px;color:#131313;font-weight:bold;}
+        .language{
+            margin-left:41px;
+            a{
+                position:relative;display:inline-block;padding:0 11px;font-size:15px;color:#9ea09f;font-weight:bold;
+                &.on{color:#131313;}
+                &:first-child{padding-left:0;}
+                &:last-child{padding-right:0;}
+                &+a:before{content:'';display:block;position:absolute;width:4px;height:4px;left:-2px;top:50%;margin-top:-2px;background:#9ea09f;border-radius:2px;}
+            }
+        }
+    }
+}
+
+
+/* main */
+@include mediaMaxWidth(1400){
+    #header .logo{left:20px;}
+    .gnbWrap .util {right:20px;}
+}
+
+@include mediaMaxWidth(1300){
+    .gnbWrap .gnb{
+        margin-left:180px;
+        > div{
+            padding:0 30px;
+        }
+    }
+}
+@include mediaMaxWidth(1024){
+    .gnbWrap .gnb{display:none;}
+}
+
+@include mediaMaxWidth(767){
+    #header{
+        .innerBox{height:60px;}
+        .logo a{width:72px;height:26px;}
+    }
+    .gnbWrap .language{right:75px;}
+}
+
+
+
+/* ==============================
+ * footer
+ * ============================== */
+#footerWrap{position:relative;z-index:50;}
+#footer{
+    padding:60px 0;background:#101010;
+    .innerBox{padding:0;display:flex;align-items:center;}
+    .footLogo{
+        width:109px;height:39px;background:url(../images/common/logo-foot.png) no-repeat center center;background-size:contain;
+        font-size:0;color:transparent;
+    }
+    .footInfo{
+        color:#9ea09f;font-size:13px;margin-left:120px;
+        ul{
+            display:flex;align-items:center;
+            li{
+                position:relative;padding:0 8px 0 9px;
+                &:first-child{padding-left:0;}
+                &:last-child{padding-right:0;}
+                &+li:before{content:'';display:block;width:1px;height:10px;position:absolute;left:0;top:50%;margin-top:-5px;background:#9ea09f;}
+            }
+        }
+        .copy{margin-top:10px;}
+    }
+}
+
+@include mediaMaxWidth(1400){
+    #footer{
+        .innerBox{padding:0 20px;}
+    }
+}
+@media screen and (max-width:767px) {
+    #footer{padding:60px 0;}
+    #footer .btnTop{bottom:auto;top:-40px;}
+    #footer h1{font-size:18px;}
+    #footer .address{margin-top:15px;font-size:12px;}
+    #footer .email a{font-size:12px;}
+    #footer .copy{margin-top:40px;font-size:12px;}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
