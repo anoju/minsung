@@ -10,20 +10,6 @@
 <script type="text/javascript" src="../static/js/ui.js"></script>
 </head>
 <body>
-
-	<div class="mainPopup" style="display:none;">
-		<div class="bg"></div>
-		<div class="popCont">
-			<img src="이미지이미지" alt="" />
-			<div class="btn">
-				<div class="checkbox">
-					<input type="checkbox" id="todayCheck" /><label for="todayCheck">오늘하루 더이상 이창을 열지 않습니다.</label>
-				</div>
-				<a href="#" class="close">닫기</a>
-			</div>
-		</div>
-	</div>
-
 	<!-- 헤더영역 -->
 	<!-- 메인만 main 클래스 적용-->
 	<header id="headerWrap" data-include="../include/header.html" class="main"></header>
@@ -35,6 +21,7 @@
 		<section class="mainSec01">
 			<div class="visualBg">
 				<video autoplay loop muted poster="../static/images/main/main-posterg.png"><source src="../static/video/main-visual.webm" type="video/webm"><source src="../static/video/main-visual.mp4" type="video/mp4"></video>
+				<div class="mask"></div>
 			</div>
 			<div class="innerBox">
 				<div class="textBox">
