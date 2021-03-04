@@ -156,23 +156,42 @@
 	.mainSec02 .textBox,
 	.mainSec02 .imgBox{float:none;width:auto;}
 	.mainSec02 .textBox{padding-top:0;}
-	.mainSec02 .imgBox{display:flex;margin-top:40px;}
-	.mainSec02 .imgBox li{float:none !important;padding:0 !important;width:25%;}
-	.mainSec02 .imgBox li+li{margin-left:20px;}
-	.mainSec02 .imgBox li:nth-child(even){margin-top:80px;}
+	.mainSec02 .imgBox{margin:40px -10px 0;}
+	.mainSec02 .imgBox li:nth-child(odd),
+	.mainSec02 .imgBox li:nth-child(even){float:left !important;padding:0 10px;width:25%;}
+	.mainSec02 .imgBox li:nth-child(even){padding-top:80px !important;}
 	.mainSec02 .imgBox .box .txt{padding:20px;font-size:14px;}
 	.mainSec02 .imgBox .box .txt strong{font-size:20px;}
 
 	.mainSec03{padding:80px 0;}
+	.mainSec03 .productBox{margin-left:-20px;margin-right:-20px;overflow-y:hidden;overflow-x:auto;}
+	.mainSec03 .productBox li:first-child{padding-left:20px;}
+	.mainSec03 .productBox li:last-child{padding-right:20px;}
 	.mainSec03 .productBox li+li{margin-left:20px;}
+	.mainSec03 .productBox .box{min-width:200px;}
 	.mainSec03 .productBox .box .txt{padding:20px;font-size:14px;}
 	.mainSec03 .productBox .box .txt strong{font-size:20px;}
 
 	.mainSec04{padding:80px 0;}
 
 	.mainSec05{padding:80px 0;}
+	.mainSec05 .mail .button{flex:0 0 120px;margin-left:10px;}
 }
 
 @media screen and (max-width:767px) {
+	body{font-size:16px;}
 	// .mainSec01{min-height:500px;}
+	[class*=mainSec] .textBox h1{font-size:9vw;}
+	[class*=mainSec] .textBox .text{font-size:16px;margin-top:20px;}
+	.mainSec01 .textBox h1{font-size:11vw;}
+	.mainSec02{padding:60px 0;}
+	.mainSec02 .textBox .link{margin-top:30px;}
+	.mainSec02 .imgBox li:nth-child(odd),
+	.mainSec02 .imgBox li:nth-child(even){width:50%;}
+	.mainSec02 .imgBox li:nth-child(3){margin-top:-60px;}
+	.mainSec02 .imgBox li:nth-child(4){margin-top:-60px;}
+	.mainSec03{padding:60px 0;}
+	.mainSec03 .productBox{margin-top:40px;}
+	.mainSec04{padding:60px 0;}
+	.mainSec05{padding:60px 0;}
 }

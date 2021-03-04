@@ -29,7 +29,10 @@ body.scrollLock {overflow: hidden;}
 /* input */
 .input{display:inline-block;}
 .input input{width:100%;height:86px;color:#131313;padding:0 40px;border:1px solid #131313;box-sizing:border-box;}
-
+@media screen and (max-width:767px) {
+	.button{height:50px;padding:0 10px;font-size:18px;}
+	.input input{height:50px;padding:0 15px;}
+}
 .ui-spl-txt .ui-spl-item{opacity:0;-webkit-transition:1s;transition:1s;display:inline-block;vertical-align:top;font-weight:inherit;line-height:inherit;}
 .ui-spl-txt.on .ui-spl-item{opacity:1;-webkit-transform:translate3d(0,0,0) scale(1) !important;transform:translate3d(0,0,0) scale(1) !important}
 .ui-spl-txt.scale .ui-spl-item{-webkit-transform:scale(0.5);transform:scale(0.5)}
