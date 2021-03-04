@@ -5,7 +5,7 @@
 <meta content="IE=edge" http-equiv="X-UA-Compatible">
 <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width" />
 <title>(주)민성정밀</title>
-<link href="../static/css/front.min.css" rel="stylesheet" />
+<link href="../static/css/front.css" rel="stylesheet" />
 <script type="text/javascript" src="../static/js/common.js"></script>
 <script type="text/javascript" src="../static/js/ui.js"></script>
 </head>
@@ -35,13 +35,13 @@
 			<div class="innerBox">
 				<div class="textBox" data-animation="fadeInUp">
 					<h1>CAPABILITIES</h1>
-					<p>민성정밀은 아래 다양한 영역의 핵심역량을 보유하고 있습니다.</p>
+					<p class="text">민성정밀은 아래 다양한 영역의 핵심역량을 보유하고 있습니다.</p>
 					<div class="link">
-						<a href="#">What is explosion proof ?</a>
+						<a href="#">WHAT IS EXPLOSION PROOF ?</a>
 					</div>
 				</div>
 				<ul class="imgBox">
-					<li>
+					<li data-animation="zoomIn">
 						<a href="#" class="box">
 							<img src="../static/images/main/main-box1.png" alt="">
 							<div class="txt">
@@ -50,7 +50,7 @@
 							</div>
 						</a>
 					</li>
-					<li>
+					<li data-animation="zoomIn" data-delay="200">
 						<a href="#" class="box">
 							<img src="../static/images/main/main-box2.png" alt="">
 							<div class="txt">
@@ -59,7 +59,7 @@
 							</div>
 						</a>
 					</li>
-					<li>
+					<li data-animation="zoomIn" data-delay="400">
 						<a href="#" class="box">
 							<img src="../static/images/main/main-box3.png" alt="">
 							<div class="txt">
@@ -68,7 +68,7 @@
 							</div>
 						</a>
 					</li>
-					<li>
+					<li data-animation="zoomIn" data-delay="600">
 						<a href="#" class="box">
 							<img src="../static/images/main/main-box4.png" alt="">
 							<div class="txt">
@@ -89,7 +89,7 @@
 					효과적인 엔지니어링과 사전 계획 수립을 통해 최고의 품질을 보장합니다.</p>
 				</div>
 				<ul class="productBox">
-					<li>
+					<li data-animation="fadeInUp">
 						<a href="#" class="box">
 							<img src="../static/images/main/main-product1.png" alt="">
 							<div class="txt">
@@ -98,7 +98,7 @@
 							</div>
 						</a>
 					</li>
-					<li>
+					<li data-animation="fadeInUp" data-delay="200">
 						<a href="#" class="box">
 							<img src="../static/images/main/main-product2.png" alt="">
 							<div class="txt">
@@ -107,7 +107,7 @@
 							</div>
 						</a>
 					</li>
-					<li>
+					<li data-animation="fadeInUp" data-delay="400">
 						<a href="#" class="box">
 							<img src="../static/images/main/main-product3.png" alt="">
 							<div class="txt">
@@ -137,8 +137,12 @@
 					<h1 data-animation="fadeInUp">INQUIRY</h1>
 					<p class="text" data-animation="fadeInUp">편리하게 견적을 신청해 보세요.</p>
 					<div class="mail">
-						<input type="text" placeholer="이메일 주소를 입력해주세요.">
-						<button class="button" type="button">견적신청</button>
+						<div>
+							<div class="input">
+								<input type="text" placeholder="이메일 주소를 입력해주세요.">
+							</div>
+							<button class="button" type="button">견적신청</button>
+						</div>
 					</div>
 				</div>
 			</div>
