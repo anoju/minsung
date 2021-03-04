@@ -29,6 +29,7 @@ $(function(){
 	* content
 	* ============================== */
 	imgChange();
+	if($('.ui-spl-txt').length)$('.ui-spl-txt').splitText();
 });
 
 var common = {
@@ -319,7 +320,73 @@ var layerPopClose = function(target){
 	});
 }
 
+//글자별 애니메이션: 다른태그와 사용가능 '<','>' 사용불가
+//data-animation="on" 과 같이 사용가능
+//$('.txt').splitText();
+$.fn.splitText = function(speed, delay){
+	return this.each(function(){
+		var $this = $(this),
+			$thisTxt = $.trim($(this).text()),
+			$originHtml = $(this).html(),
+			$split = $(this).html().split(''),
+			$html = '',
+			$tag = '',
+			$isTag = false,
+			$style = $(this).attr('style'),
+			j = 0,
+			$speed = !!speed?speed:$(this).data('speed'),
+			$delay = !!delay?delay:$(this).data('delay'),
+			$distance = $(this).data('distance');
+		
+		$this.attr({
+			'role':'text',
+			'aria-label': $thisTxt
+		});
+		if($speed == null)$speed = 100;
+		if($delay == null)$delay = 0;
 
+		$this.css('height',$this.height()).html('');
+		//for(var i in $split){
+		for(var i=0; i<$split.length; i++){
+			if($isTag){
+				$tag += $split[i];
+				if($split[i] == '>'){
+					$isTag = false;
+					$html += $tag;
+				}
+			}else{
+				if($split[i] == '<'){
+					$tag = $split[i];
+					$isTag = true;
+				}else if($split[i] == ' '){
+					$html += '<span class="ui-spl-item">&nbsp;</span>';
+				}else{
+					j++;
+					$html += '<span class="ui-spl-item" style="';
+					$html += '-webkit-transition-delay:'+(j*$speed+$delay)+'ms;';
+					$html += 'transition-delay:'+(j*$speed+$delay)+'ms;';
+					if($distance != null){
+						var $posX = randomNumber(-$distance,$distance,0),
+							$posY = randomNumber(-$distance,$distance,0),
+							$posZ = randomNumber(-$distance,$distance,0),
+							$scale = randomNumber(0.3,0.8,1);
+
+						$html += '-webkit-transform:translate3d('+$posX+'px,'+$posY+'px,'+$posZ+'px) scale('+$scale+');';
+						$html += 'transform:translate3d('+$posX+'px,'+$posY+'px,'+$posZ+'px) scale('+$scale+');';
+					}
+					$html += '">';
+					$html += $split[i];
+					$html += '</span>';
+				}
+			}
+		}
+		$this.html($html).removeAttr('style');
+		if($style)$this.attr('style',$style);
+		setTimeout(function(){
+			$this.html($originHtml);
+		},(j*100)+1000);
+	});
+};
 
 /* parallax scrolling motion */
 /*
