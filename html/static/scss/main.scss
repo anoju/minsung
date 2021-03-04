@@ -124,6 +124,10 @@
 
 .mainSec04{
 	padding:130px 0 150px;background:url(../images/main/main-sec04-bg.png) no-repeat center center;background-size:cover;
+	.text{
+		position:relative;padding-right:70px;
+		&:after{content:'';display:block;position:absolute;bottom:4px;right:0;width:61px;height:16px;margin-top:22px;background:url(../images/main/main-link-arr.png) no-repeat center center;background-size:contain;}
+	}
 }
 
 .mainSec05{
