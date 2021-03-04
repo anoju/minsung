@@ -148,6 +148,10 @@ var common = {
 		};
 	},
 	button: function(){
+		$(document).on('click', btnInEfList,function(e){
+			var $href = $(this).attr('href');
+			if($href == '#none')e.preventDefault();
+		});
 		var btnInEfList = 'a.button, button.button, .btnClickEf';
 		$(document).on('click', btnInEfList,function(e){
 			var $btnEl = $(this),
