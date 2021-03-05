@@ -215,7 +215,7 @@ var main = {
 	},
 	header: function(){
 		var scrollTop = $(window).scrollTop();
-		var offsetTop = $('.mainSec03').offset().top - $('#header').outerHeight();
+		var offsetTop = $('.mainSec02').offset().top - $('#header').outerHeight();
 		
 		if(scrollTop > offsetTop){
 			$('#headerWrap.main').addClass('scrollBg')
@@ -386,9 +386,16 @@ $.fn.splitText = function(speed, delay){
 		}
 		$this.html($html).removeAttr('style');
 		if($style)$this.attr('style',$style);
-		setTimeout(function(){
-			$this.html($originHtml);
-		},(j*100)+1000);
+
+		$this.waypoint({
+			handler: function(direction) {
+				$this.addClass('on');
+				setTimeout(function(){
+					$this.html($originHtml);
+				},(j*100)+1000);
+			},
+			offset: '90%'
+		})
 	});
 };
 

@@ -38,7 +38,7 @@
 	position:relative;
 	.textBox{
 		color:#fff;word-break:break-all;
-		h1{font-size:80px;line-height:1.18;}
+		h1{font-size:80px;line-height:1.18;letter-spacing:-0.02em;}
 		.text{margin-top:30px;font-size:18px;}
 	}
 	&:after{content:'';display:block;clear:both;}
@@ -64,13 +64,15 @@
 		.link{
 			margin-top:64px;
 			a{
-				color:#ffc001;
+				display:block;color:#ffc001;
 				&:after{content:'';display:block;width:61px;height:16px;margin-top:22px;background:url(../images/main/main-link-arr.png) no-repeat center center;background-size:contain;}
+				&:hover:after{animation:mainArrRight 1.5s infinite;}
 			}
 		}
 	}
 	.imgBox{
 		float:right;width:54.8571%;
+		&:after{content:'';display:block;clear:both;}
 		li{
 			padding:20px;width:50%;
 			&:first-child{
@@ -123,11 +125,23 @@
 }
 
 .mainSec04{
-	padding:130px 0 150px;background:url(../images/main/main-sec04-bg.png) no-repeat center center;background-size:cover;
-	.text{
-		position:relative;padding-right:70px;
-		&:after{content:'';display:block;position:absolute;bottom:4px;right:0;width:61px;height:16px;margin-top:22px;background:url(../images/main/main-link-arr.png) no-repeat center center;background-size:contain;}
+	position:relative;background:url(../images/main/main-sec04-bg.png) no-repeat center center;background-size:cover;
+	.textBox>a{
+		position:relative;display:block;padding:130px 0 150px;z-index:1;
+		.text{
+			position:relative;padding-right:70px;
+			&:after{content:'';display:block;position:absolute;bottom:4px;right:0;width:61px;height:16px;margin-top:22px;background:url(../images/main/main-link-arr.png) no-repeat center center;background-size:contain;}
+		}
+		&:hover .text:after{animation:mainArrLeft 1.5s infinite;}
 	}
+}
+@keyframes mainArrRight{
+	0%, 100%{transform:translateX(0);}
+	50%{transform:translateX(30%);}
+}
+@keyframes mainArrLeft{
+	0%, 100%{transform:translateX(0);}
+	50%{transform:translateX(-30%);}
 }
 
 .mainSec05{
@@ -176,7 +190,7 @@
 	.mainSec03 .productBox .box .txt{padding:20px;font-size:14px;}
 	.mainSec03 .productBox .box .txt strong{font-size:20px;}
 
-	.mainSec04{padding:80px 0;}
+	.mainSec04 .textBox>a{padding:80px 0;}
 
 	.mainSec05{padding:80px 0;}
 	.mainSec05 .mail .button{flex:0 0 120px;margin-left:10px;}
@@ -190,12 +204,16 @@
 	.mainSec01 .textBox h1{font-size:11vw;}
 	.mainSec02{padding:60px 0;}
 	.mainSec02 .textBox .link{margin-top:30px;}
+	.mainSec02 .imgBox{margin-left:-5px;margin-right:-5px;}
 	.mainSec02 .imgBox li:nth-child(odd),
-	.mainSec02 .imgBox li:nth-child(even){width:50%;}
-	.mainSec02 .imgBox li:nth-child(3){margin-top:-60px;}
-	.mainSec02 .imgBox li:nth-child(4){margin-top:-60px;}
+	.mainSec02 .imgBox li:nth-child(even){width:50%;padding:0 5px;}
+	.mainSec02 .imgBox li:nth-child(3){margin-top:-70px;}
+	.mainSec02 .imgBox li:nth-child(4){margin-top:-70px;}
+	.mainSec02 .imgBox .box .txt{font-size:13px;padding:15px;}
+	.mainSec02 .imgBox .box .txt strong{font-size:16px;margin-bottom:10px;}
 	.mainSec03{padding:60px 0;}
 	.mainSec03 .productBox{margin-top:40px;}
-	.mainSec04{padding:60px 0;}
+	.mainSec04 .textBox>a{padding:60px 0;}
+	.mainSec04 .textBox h1{font-size:8vw;}
 	.mainSec05{padding:60px 0;}
 }

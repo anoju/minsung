@@ -5,13 +5,23 @@
 body.hidden {overflow: hidden;}
 body.scrollLock {overflow: hidden;}
 
+@media screen and (max-width:767px) {
+	.mo_hide {display:none;}
+}
 /* 글자색 */
 .txtRed1 { color:#de190a;}
 .txtBlue1 { color:#003388;}
 .txtGray1 { color:#999999;}
 
-/* 글자 숨기기 */
-.hidden { overflow:hidden; position:absolute; top:0; left:0; width:0; height:0; font-size:0;}
+/* 숨기기 */
+.blind { overflow:hidden; position:absolute; top:0; left:0; width:0; height:0; font-size:0;}
+.hidden{overflow:hidden;}
+.hide{display:none;}
+.pc_hide{display:none;}
+@media screen and (max-width:767px) {
+	.pc_hide{display:block;}
+	.mo_hide{display:none;}
+}
 
 /* 버튼 */
 .button{position:relative;display:inline-flex;width:auto;height:86px;padding:0 20px;border:1px solid #131313;background:#131313;color:#fff;align-items:center;justify-content:center;font-size:20px;white-space:nowrap;text-decoration:none;overflow:hidden;box-sizing:border-box;-webkit-appearance:none;}
