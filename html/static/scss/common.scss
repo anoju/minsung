@@ -5,8 +5,11 @@ body.hidden {overflow: hidden;}
 body.scrollLock {overflow: hidden;}
 
 .loading{
-    position:fixed;top:0;left:0;width:100%;height:100%;background:#fff;z-index:1000;clip-path:circle(100%);transition:0.5s;opacity:1;
-    &.off{clip-path:circle(0%);opacity:0;}
+    position:fixed;top:0;left:0;width:100%;height:100%;background:#fff;z-index:1000;clip-path:circle(100%);transition:0.5s;
+    //opacity:1;
+    &.off{clip-path:circle(0%);
+        //opacity:0;
+    }
     &:before{content:'';display:block;position:absolute;left:50%;top:50%;width:246px;height:282px;margin:-141px 0 0 -123px;background:url(../images/common/loading.png) no-repeat center center;background-size:contain;animation:loadingRotate 30s linear infinite;}
 }
 @keyframes loadingRotate{
