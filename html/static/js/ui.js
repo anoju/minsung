@@ -175,6 +175,11 @@ var common = {
 			}
 		});
 	},
+	pageTitle: function(){
+		if($('.pageVisual').length){
+			$('.pageVisual').addClass('on');
+		}
+	},
 	init: function(){
 		common.header();
 		common.menuActive();
@@ -182,6 +187,7 @@ var common = {
 		common.form();
 		common.ieScroll();
 		common.button();
+		common.pageTitle();
 	}
 }
 
