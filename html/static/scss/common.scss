@@ -4,6 +4,16 @@
 body.hidden {overflow: hidden;}
 body.scrollLock {overflow: hidden;}
 
+.loading{
+    position:fixed;top:0;left:0;width:100%;height:100%;background:#fff;z-index:1000;clip-path:circle(100%);transition:0.5s;opacity:1;
+    &.off{clip-path:circle(0%);opacity:0;}
+    &:before{content:'';display:block;position:absolute;left:50%;top:50%;width:246px;height:282px;margin:-141px 0 0 -123px;background:url(../images/common/loading.png) no-repeat center center;background-size:contain;animation:loadingRotate 30s linear infinite;}
+}
+@keyframes loadingRotate{
+    0%{transform:rotate(0deg);}
+    100%{transform:rotate(360deg);}
+}
+
 /* 글자색 */
 .txtRed1 { color:#de190a;}
 .txtBlue1 { color:#003388;}
@@ -249,6 +259,7 @@ body.scrollLock {overflow: hidden;}
     }
 }
 @media (max-width:767px) {
+    .loading:before{width:82px;height:94px;margin:-47px 0 0 -41px;}
     #header{
         .innerBox{height:59px;}
         .logo a{width:72px;height:26px;}

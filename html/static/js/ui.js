@@ -30,6 +30,13 @@ $(function(){
 	* ============================== */
 	imgChange();
 	if($('.ui-spl-txt').length)$('.ui-spl-txt').splitText();
+
+	$(window).load(function(){
+		$('.loading').addClass('off').delay(500).queue(function(next){
+			$('.loading').remove();
+			next();
+		});
+	});
 });
 
 var common = {
