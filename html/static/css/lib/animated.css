@@ -1,12 +1,4 @@
 @charset "UTF-8";
-
-[data-animation] { opacity:0;}
-[data-animation].animated { opacity:1;}
-
-@media screen and (max-width:767px){
-  [data-animation].animated { animation-delay: 0s !important;}
-}
-
 .wait-animation{-webkit-animation-play-state:paused;animation-play-state:paused;}
 .animated {
   -webkit-animation-duration: 1s;
