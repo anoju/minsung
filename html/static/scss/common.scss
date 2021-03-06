@@ -129,7 +129,7 @@ body.scrollLock {overflow: hidden;}
 #container{overflow:hidden;margin-top:80px;min-height:calc(100vh - 246px);}
 .innerBox{position:relative;max-width:1400px;margin:0 auto;}
 .pageTitle{
-    padding:135px 0 100px;min-height:452px;background:#fff;
+    padding:135px 0 132px;background:#fff;
     .innerBox{
         display:flex;
         >div{
@@ -142,14 +142,17 @@ body.scrollLock {overflow: hidden;}
         line-height:1.9;
         div{line-height:inherit;}
         >div+div{margin-top:2em;}
+        @for $i from 1 through 5 {
+            >div:nth-child(#{$i}) [data-animation]{animation-delay:($i * 0.2s);}
+        }
     }
 }
 .pageVisual{
     position:relative;overflow:hidden;
-    &:before{content:'';display:block;position:absolute;top:0;left:-20%;width:140%;height:100%;background:#fff;transform:skewX(-10deg);transition:left 1s cubic-bezier(0.71, 0.18, 1, 0.31);}
-    &:after{content:'';display:block;height:340px;}
-    background-color:#000;background-position:center center;background-repeat:no-repeat;background-size:cover;background-attachment:fixed;
-    &.sub1-1{background-image:url(../images/visual/sub1-1.png);}
+    &:before{content:'';display:block;position:absolute;top:0;left:-20%;width:140%;height:100%;background:#fff;transform:skewX(-10deg);transition:left 1s cubic-bezier(0.71, 0.18, 1, 0.31);z-index:1;}
+    .pageVisualInner{height:340px;}
+    background-color:#222;background-position:center center;background-repeat:no-repeat;background-size:cover;background-attachment:fixed;
+    
     .pageTitle{
         transform:translateY(-100%);transition:transform 0.75s 1.2s ease;
         .tit{animation-delay:1.8s;}
@@ -163,6 +166,10 @@ body.scrollLock {overflow: hidden;}
         &:before{left:120%;}
         .pageTitle{transform:translateY(0);}
     }
+
+    &.about{background-image:url(../images/visual/about.png);}
+    &.history{background-image:url(../images/visual/history.png);}
+    &.location{background-image:url(../images/visual/location.png);}
 }
 
 /* footer */
@@ -267,9 +274,9 @@ body.scrollLock {overflow: hidden;}
         .innerBox{height:59px;}
         .logo a{width:72px;height:26px;}
     }
-    #container{margin-top:60px;min-height:calc(100vh - 60px);}
+    #container{margin-top:60px;min-height:auto;}
     .pageTitle{
-        padding:50px 0;min-height:0;
+        padding:50px 0;
         .innerBox{
             display:block;
             >div{
@@ -282,7 +289,7 @@ body.scrollLock {overflow: hidden;}
             >div+div{margin-top:1rem;}
         }
     }
-    .pageVisual:after{height:200px;}
+    .pageVisual .pageVisualInner{height:200px;}
     #footer{
         padding:20px 0;
         .innerBox{display:block;}
