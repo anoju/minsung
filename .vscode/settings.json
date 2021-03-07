@@ -1,3 +1,10 @@
 {
-    "liveServer.settings.port": 5503
+    "liveServer.settings.port": 5503,
+    "liveSassCompile.settings.formats": [
+        {
+            "format": "compact",
+            "extensionName": ".css",
+            "savePath": "~/../css/"
+        }
+    ],
 }
