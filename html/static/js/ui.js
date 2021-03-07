@@ -32,10 +32,15 @@ $(function(){
 	if($('.ui-spl-txt').length)$('.ui-spl-txt').splitText();
 
 	$(window).load(function(){
-		$('.loading').addClass('off').delay(500).queue(function(next){
-			$('.loading').remove();
-			next();
-		});
+		if($('.loading').length){
+			$('.loading').addClass('off').delay(500).queue(function(next){
+				$('.loading').remove();
+				common.pageTitle();
+				next();
+			});
+		}else{
+			common.pageTitle();
+		}
 	});
 });
 
@@ -194,7 +199,6 @@ var common = {
 		common.form();
 		common.ieScroll();
 		common.button();
-		common.pageTitle();
 	}
 }
 
