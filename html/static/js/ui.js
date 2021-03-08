@@ -204,7 +204,7 @@ var common = {
 
 var main = {
 	video: function(){
-		var ratio = {v:16,h:9}
+		var ratio = {v:16,h:9} //비디오비율 16x9
 		var $winW = $(window).width();
 		var $visual = $('.mainSec01 .visualBg');
 		var $video = $visual.find('video');

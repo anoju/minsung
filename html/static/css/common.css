@@ -184,6 +184,8 @@ body.scrollLock { overflow: hidden; }
 
 .pageVisual.location { background-image: url(../images/visual/location.png); }
 
+.pageVisual.cnc { background-image: url(../images/visual/cnc.png); }
+
 /* footer */
 #footerWrap { position: relative; z-index: 50; }
 

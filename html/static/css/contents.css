@@ -84,7 +84,7 @@
 
 .company .bg { position: absolute; left: 0; width: 50%; height: 100%; background: #ffc001; overflow: hidden; }
 
-.company .bg:after { content: ''; position: absolute; right: -55px; bottom: -165px; display: block; width: 516px; height: 590px; background: url(../images/sub1/company-bg.png) no-repeat center center; background-size: contain; -webkit-animation: bgRotate 30s linear infinite; animation: bgRotate 30s linear infinite; }
+.company .bg:after { content: ''; position: absolute; right: -55px; bottom: -165px; display: block; width: 516px; height: 590px; background: url(../images/introduce/company-bg.png) no-repeat center center; background-size: contain; -webkit-animation: bgRotate 30s linear infinite; animation: bgRotate 30s linear infinite; }
 
 .company .innerBox { padding-top: 125px; padding-bottom: 125px; }
 
@@ -107,7 +107,7 @@
   .company .flex { display: block; }
   .company .flex > div { padding-right: 0; }
   .company .flex > div:first-child { margin: 0 -20px; padding: 50px 20px; width: auto; position: relative; background: #ffc001; overflow: hidden; }
-  .company .flex > div:first-child:before { content: ''; position: absolute; right: -18px; bottom: -55px; display: block; width: 172px; height: 196px; background: url(../images/sub1/company-bg.png) no-repeat center center; background-size: contain; -webkit-animation: bgRotate 30s linear infinite; animation: bgRotate 30s linear infinite; }
+  .company .flex > div:first-child:before { content: ''; position: absolute; right: -18px; bottom: -55px; display: block; width: 172px; height: 196px; background: url(../images/introduce/company-bg.png) no-repeat center center; background-size: contain; -webkit-animation: bgRotate 30s linear infinite; animation: bgRotate 30s linear infinite; }
   .company .flex > div + div { padding-left: 0; margin-top: 30px; }
   .company .tit { font-size: 35px; margin-top: 0; } }
 
@@ -119,7 +119,7 @@
 
 .historyList ul li { position: relative; }
 
-.historyList ul li:before { content: ''; display: block; position: absolute; left: 50%; top: 30px; width: 27px; height: 30px; margin-left: -1px; -webkit-transform: translateX(-50%) scale(1) rotate(0deg); transform: translateX(-50%) scale(1) rotate(0deg); background: url(../images/sub1/history-dot.png) no-repeat center center; background-size: contain; -webkit-transition: 1s cubic-bezier(0, 0.8, 0.2, 1); transition: 1s cubic-bezier(0, 0.8, 0.2, 1); }
+.historyList ul li:before { content: ''; display: block; position: absolute; left: 50%; top: 30px; width: 27px; height: 30px; margin-left: -1px; -webkit-transform: translateX(-50%) scale(1) rotate(0deg); transform: translateX(-50%) scale(1) rotate(0deg); background: url(../images/introduce/history-dot.png) no-repeat center center; background-size: contain; -webkit-transition: 1s cubic-bezier(0, 0.8, 0.2, 1); transition: 1s cubic-bezier(0, 0.8, 0.2, 1); }
 
 .historyList ul li:nth-child(odd) { padding-right: 470px; }
 
@@ -195,4 +195,44 @@
   .locationWrap .th:after { top: 6px; height: 17px; }
   .locationWrap .td { font-size: 18px; padding: 1px 0 1px 20px; }
   .locationMap { height: 400px; } }
+
+.imgCncList { padding: 150px 0; overflow: hidden; }
+
+.imgCncList .flex { -webkit-box-align: center; -ms-flex-align: center; align-items: center; }
+
+.imgCncList .img { position: relative; overflow: hidden; -webkit-box-flex: 0; -ms-flex: 0 0 57.14%; flex: 0 0 57.14%; }
+
+.imgCncList .img img { width: 100%; -webkit-transition: 0.5s ease; transition: 0.5s ease; }
+
+.imgCncList .img .box { position: absolute; display: -webkit-box; display: -ms-flexbox; display: flex; right: 0; bottom: 0; width: 114px; height: 114px; -webkit-box-align: center; -ms-flex-align: center; align-items: center; -webkit-box-pack: center; -ms-flex-pack: center; justify-content: center; color: #fff; font-size: 25px; font-weight: bold; background: #ffc001; }
+
+.imgCncList .text { padding: 0 3% 0 7.14%; }
+
+.imgCncList .text .tit { font-size: 60px; font-weight: bold; letter-spacing: -0.02em; }
+
+.imgCncList .text .info { margin-top: 28px; }
+
+.imgCncList .text .info li { position: relative; padding-left: 0.85em; }
+
+.imgCncList .text .info li:before { content: ''; display: block; width: 2px; height: 2px; background: #222; position: absolute; left: 0; top: 0.75em; }
+
+.imgCncList .text .info li + li { margin-top: 10px; }
+
+.imgCncList .innerBox > ul > li:nth-child(even) .flex { -webkit-box-orient: horizontal; -webkit-box-direction: reverse; -ms-flex-direction: row-reverse; flex-direction: row-reverse; }
+
+.imgCncList .innerBox > ul > li:hover .img img { -webkit-transform: scale(1.1); transform: scale(1.1); }
+
+.imgCncList .innerBox > ul > li + li { margin-top: 150px; }
+
+@media screen and (max-width: 1300px) { .imgCncList .img { -webkit-box-flex: 0; -ms-flex: 0 0 53%; flex: 0 0 53%; }
+  .imgCncList .text { padding: 0 2% 0 4%; } }
+
+@media screen and (max-width: 767px) { .imgCncList { padding: 50px 0; }
+  .imgCncList .flex { display: block; }
+  .imgCncList .img .box { width: 60px; height: 60px; font-size: 20px; }
+  .imgCncList .text { padding: 30px 20px 0; }
+  .imgCncList .text .tit { font-size: 25px; }
+  .imgCncList .text .info { margin-top: 15px; }
+  .imgCncList .text .info li + li { margin-top: 5px; }
+  .imgCncList .innerBox > ul > li + li { margin-top: 50px; } }
 /*# sourceMappingURL=contents.css.map */

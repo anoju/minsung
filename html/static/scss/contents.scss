@@ -102,7 +102,7 @@
     position:relative;overflow:hidden;
     .bg{
         position:absolute;left:0;width:50%;height:100%;background:#ffc001;overflow:hidden;
-        &:after{content:'';position:absolute;right:-55px;bottom:-165px;display:block;width:516px;height:590px;background:url(../images/sub1/company-bg.png) no-repeat center center;background-size:contain;animation:bgRotate 30s linear infinite;}
+        &:after{content:'';position:absolute;right:-55px;bottom:-165px;display:block;width:516px;height:590px;background:url(../images/introduce/company-bg.png) no-repeat center center;background-size:contain;animation:bgRotate 30s linear infinite;}
     }
     .innerBox{padding-top:125px;padding-bottom:125px}
     .flex{
@@ -137,7 +137,7 @@
                 &:first-child{
                     margin:0 -20px;padding:50px 20px;width:auto;
                     position:relative;background:#ffc001;overflow:hidden;
-                    &:before{content:'';position:absolute;right:-18px;bottom:-55px;display:block;width:172px;height:196px;background:url(../images/sub1/company-bg.png) no-repeat center center;background-size:contain;animation:bgRotate 30s linear infinite;}
+                    &:before{content:'';position:absolute;right:-18px;bottom:-55px;display:block;width:172px;height:196px;background:url(../images/introduce/company-bg.png) no-repeat center center;background-size:contain;animation:bgRotate 30s linear infinite;}
                 }
                 +div{padding-left:0;margin-top:30px;}
             }
@@ -153,7 +153,7 @@
         width:720px;margin:0 auto;
         li{
             position:relative;
-            &:before{content:'';display:block;position:absolute;left:50%;top:30px;width:27px;height:30px;margin-left:-1px;transform:translateX(-50%) scale(1) rotate(0deg);background:url(../images/sub1/history-dot.png) no-repeat center center;background-size:contain;transition:1s cubic-bezier(0, 0.8, 0.2, 1);}
+            &:before{content:'';display:block;position:absolute;left:50%;top:30px;width:27px;height:30px;margin-left:-1px;transform:translateX(-50%) scale(1) rotate(0deg);background:url(../images/introduce/history-dot.png) no-repeat center center;background-size:contain;transition:1s cubic-bezier(0, 0.8, 0.2, 1);}
             &:nth-child(odd){padding-right:470px;}
             &:nth-child(even){padding-left:470px;}
             &:hover:before{transform:translateX(-50%) scale(1.2) rotate(720deg);}
@@ -260,4 +260,68 @@
         .td{font-size:18px;padding:1px 0 1px 20px;}
     }
     .locationMap{height:400px;}
+}
+
+.imgCncList{
+    padding:150px 0;overflow:hidden;
+    .flex{
+        align-items:center;
+    }
+    .img{
+        position:relative;overflow:hidden;flex:0 0 57.14%;
+        img{width:100%;transition: 0.5s ease;}
+        .box{position:absolute;display:flex;right:0;bottom:0;width:114px;height:114px;align-items:center;justify-content:center;color:#fff;font-size:25px;font-weight:bold;background:#ffc001;}
+    }
+    .text{
+        padding:0 3% 0 7.14%;
+        .tit{font-size:60px;font-weight:bold;letter-spacing:-0.02em;}
+        .info{
+            margin-top:28px;
+            li{
+                position:relative;padding-left:0.85em;
+                &:before{content:'';display:block;width:2px;height:2px;background:#222;position:absolute;left:0;top:0.75em;}
+                +li{margin-top:10px;}
+            }
+        }
+    }
+    .innerBox>ul{
+        >li:nth-child(even){
+            .flex{flex-direction:row-reverse;}
+        }
+        >li:hover .img img{transform:scale(1.1);}
+        >li+li{margin-top:150px;}
+    }
+}
+
+@media screen and (max-width:1300px) {
+	.imgCncList{
+        .img{
+            flex:0 0 53%;
+        }
+        .text{
+            padding:0 2% 0 4%;
+        }
+    }
+}
+@media screen and (max-width:767px) {
+	.imgCncList{
+        padding:50px 0;
+        .flex{display:block;}
+        .img{
+            .box{width:60px;height:60px;font-size:20px;}
+        }
+        .text{
+            padding:30px 20px 0;
+            .tit{font-size:25px;}
+            .info{
+                margin-top:15px;
+                li{
+                    +li{margin-top:5px;}
+                }
+            }
+        }
+        .innerBox>ul{
+            >li+li{margin-top:50px;}
+        }
+    }
 }
