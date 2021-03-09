@@ -155,7 +155,7 @@ body.scrollLock {overflow: hidden;}
     
     .pageTitle{
         transform:translateY(-100%);transition:transform 0.75s 1.2s ease;
-        .tit{animation-delay:1.8s;}
+        .tit{animation-delay:2s;}
         .text{
             @for $i from 1 through 5 {
                 >div:nth-child(#{$i}) [data-animation]{animation-delay:(2s+($i * 0.2s));}
@@ -172,6 +172,13 @@ body.scrollLock {overflow: hidden;}
     &.location{background-image:url(../images/visual/location.png);}
 
     &.cnc{background-image:url(../images/visual/cnc.png);}
+
+    &.housing{background-image:url(../images/visual/housing.png);}
+    &.locking{background-image:url(../images/visual/locking.png);}
+    &.manifold{background-image:url(../images/visual/manifold.png);}
+    &.manifold{background-image:url(../images/visual/manifold.png);}
+    &.shaft{background-image:url(../images/visual/shaft.png);}
+    &.etcPrecision{background-image:url(../images/visual/etcPrecision.png);}
 }
 
 /* footer */

@@ -95,9 +95,11 @@ var common = {
 			var $path = location.pathname;
 			$link.each(function(){
 				var $this = $(this);
-				var $href = $this.attr('href').split('/').pop();
+				var $hrefAry = $this.attr('href').split('/');
+				var $href = $hrefAry.pop();
+				var $category = $hrefAry.pop();
 				var isActive = false;
-				if($path.indexOf($href) > -1){
+				if(($path.indexOf($href) > -1) && ($path.indexOf($category) > -1)){
 					isActive = true;
 				}
 

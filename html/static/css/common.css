@@ -162,7 +162,7 @@ body.scrollLock { overflow: hidden; }
 
 .pageVisual .pageTitle { -webkit-transform: translateY(-100%); transform: translateY(-100%); -webkit-transition: -webkit-transform 0.75s 1.2s ease; transition: -webkit-transform 0.75s 1.2s ease; transition: transform 0.75s 1.2s ease; transition: transform 0.75s 1.2s ease, -webkit-transform 0.75s 1.2s ease; }
 
-.pageVisual .pageTitle .tit { -webkit-animation-delay: 1.8s; animation-delay: 1.8s; }
+.pageVisual .pageTitle .tit { -webkit-animation-delay: 2s; animation-delay: 2s; }
 
 .pageVisual .pageTitle .text > div:nth-child(1) [data-animation] { -webkit-animation-delay: 2.2s; animation-delay: 2.2s; }
 
@@ -185,6 +185,18 @@ body.scrollLock { overflow: hidden; }
 .pageVisual.location { background-image: url(../images/visual/location.png); }
 
 .pageVisual.cnc { background-image: url(../images/visual/cnc.png); }
+
+.pageVisual.housing { background-image: url(../images/visual/housing.png); }
+
+.pageVisual.locking { background-image: url(../images/visual/locking.png); }
+
+.pageVisual.manifold { background-image: url(../images/visual/manifold.png); }
+
+.pageVisual.manifold { background-image: url(../images/visual/manifold.png); }
+
+.pageVisual.shaft { background-image: url(../images/visual/shaft.png); }
+
+.pageVisual.etcPrecision { background-image: url(../images/visual/etcPrecision.png); }
 
 /* footer */
 #footerWrap { position: relative; z-index: 50; }

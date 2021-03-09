@@ -134,7 +134,7 @@
 @media screen and (max-width: 767px) { .historyList { padding: 50px 0 30px; }
   .historyList ul { width: auto; }
   .historyList ul li:before { top: 8px; width: 18px; height: 20px; }
-  .historyList ul li:nth-child(odd) { padding-right: calc(50% + 30px); }
+  .historyList ul li:nth-child(odd) { padding-right: calc(50% + 30px); text-align: right; }
   .historyList ul li:nth-child(even) { padding-left: calc(50% + 30px); }
   .historyList .date { font-size: 25px; }
   .historyList .txt { margin-top: 10px; } }

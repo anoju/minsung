@@ -169,7 +169,7 @@
             width:auto;
             li{
                 &:before{top:8px;width:18px;height:20px;}
-                &:nth-child(odd){padding-right:calc(50% + 30px);}
+                &:nth-child(odd){padding-right:calc(50% + 30px);text-align:right;}
                 &:nth-child(even){padding-left:calc(50% + 30px);}
             }
         }
