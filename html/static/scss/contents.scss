@@ -325,3 +325,42 @@
         }
     }
 }
+
+.productMasonryWrap{padding:136px 0;}
+.productMasonry{
+    width:1348px;margin:0 auto;max-width:100%;
+    
+    .size,
+    .item{width:25%;}
+    .item{
+        float:left;padding:14px;
+    }
+    .img{
+        position:relative;overflow:hidden;
+        img{width:100%;transition:0.3s ease;}
+        &:hover img{transform:scale(1.1);}
+    }
+    &:after {
+        content: '';
+        display: block;
+        clear: both;
+    }
+}
+
+@media screen and (max-width:920px) {
+    .productMasonry{
+        margin:0 -10px;width:auto;max-width:none;
+        .size,
+        .item{width:33.33%;}
+        .item{padding:10px;}
+    }
+}
+@media screen and (max-width:767px) {
+    .productMasonryWrap{padding:45px 0;}
+    .productMasonry{
+        margin:0 -5px;
+        .size,
+        .item{width:50%;}
+        .item{padding:5px;}
+    }
+}

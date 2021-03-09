@@ -41,6 +41,7 @@ $(function(){
 		}else{
 			common.pageTitle();
 		}
+		sub.product();
 	});
 });
 
@@ -201,6 +202,18 @@ var common = {
 		common.form();
 		common.ieScroll();
 		common.button();
+	}
+}
+
+var sub = {
+	product:function() {
+		if($('.productMasonry').length){
+			$('.productMasonry').masonry({
+				itemSelector: '.item',
+				columnWidth: '.size',
+				percentPosition: true
+			})
+		}
 	}
 }
 
