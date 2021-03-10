@@ -238,11 +238,15 @@
 
 .productMasonryWrap { padding: 136px 0; }
 
-.productMasonry { width: 1348px; margin: 0 auto; max-width: 100%; }
+.productMasonry { position: relative; width: 1348px; margin: 0 auto; max-width: 100%; }
 
 .productMasonry .size, .productMasonry .item { width: 25%; }
 
-.productMasonry .item { float: left; padding: 14px; }
+.productMasonry .size { position: absolute; }
+
+.productMasonry .item { float: left; padding: 14px; top: 0; left: 0; -webkit-transform: scale(1); transform: scale(1); opacity: 1; -webkit-transition: 0.3s ease; transition: 0.3s ease; }
+
+.productMasonry .item.off { -webkit-transform: scale(0.5); transform: scale(0.5); opacity: 0.5; }
 
 .productMasonry .img { position: relative; overflow: hidden; }
 

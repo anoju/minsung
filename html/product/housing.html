@@ -35,33 +35,6 @@
 			<div class="innerBox">
 				<div class="productMasonry">
 					<div class="size"></div>
-					<div class="item"><div class="img"><img src="../static/images/product/housing-img01.png" alt=""></div></div>
-					<div class="item"><div class="img"><img src="../static/images/product/housing-img02.png" alt=""></div></div>
-					<div class="item"><div class="img"><img src="../static/images/product/housing-img03.png" alt=""></div></div>
-					<div class="item"><div class="img"><img src="../static/images/product/housing-img04.png" alt=""></div></div>
-					<div class="item"><div class="img"><img src="../static/images/product/housing-img05.png" alt=""></div></div>
-					<div class="item"><div class="img"><img src="../static/images/product/housing-img06.png" alt=""></div></div>
-					<div class="item"><div class="img"><img src="../static/images/product/housing-img07.png" alt=""></div></div>
-					<div class="item"><div class="img"><img src="../static/images/product/housing-img08.png" alt=""></div></div>
-					<div class="item"><div class="img"><img src="../static/images/product/housing-img09.png" alt=""></div></div>
-					<div class="item"><div class="img"><img src="../static/images/product/housing-img10.png" alt=""></div></div>
-					<div class="item"><div class="img"><img src="../static/images/product/housing-img11.png" alt=""></div></div>
-					<div class="item"><div class="img"><img src="../static/images/product/housing-img12.png" alt=""></div></div>
-					<div class="item"><div class="img"><img src="../static/images/product/housing-img13.png" alt=""></div></div>
-					<div class="item"><div class="img"><img src="../static/images/product/housing-img14.png" alt=""></div></div>
-					<div class="item"><div class="img"><img src="../static/images/product/housing-img15.png" alt=""></div></div>
-					<div class="item"><div class="img"><img src="../static/images/product/housing-img16.png" alt=""></div></div>
-					<div class="item"><div class="img"><img src="../static/images/product/housing-img17.png" alt=""></div></div>
-					<div class="item"><div class="img"><img src="../static/images/product/housing-img18.png" alt=""></div></div>
-					<div class="item"><div class="img"><img src="../static/images/product/housing-img19.png" alt=""></div></div>
-					<div class="item"><div class="img"><img src="../static/images/product/housing-img20.png" alt=""></div></div>
-					<div class="item"><div class="img"><img src="../static/images/product/housing-img21.png" alt=""></div></div>
-					<div class="item"><div class="img"><img src="../static/images/product/housing-img22.png" alt=""></div></div>
-					<div class="item"><div class="img"><img src="../static/images/product/housing-img23.png" alt=""></div></div>
-					<div class="item"><div class="img"><img src="../static/images/product/housing-img24.png" alt=""></div></div>
-					<div class="item"><div class="img"><img src="../static/images/product/housing-img25.png" alt=""></div></div>
-					<div class="item"><div class="img"><img src="../static/images/product/housing-img26.png" alt=""></div></div>
-					<div class="item"><div class="img"><img src="../static/images/product/housing-img27.png" alt=""></div></div>
 				</div>
 			</div>
 		</div>
@@ -73,7 +46,16 @@
 	<!-- //하단 영역 -->
 
 	<script>
-		
+		var imgAry = [];
+		var t = null;
+		for(var i = 1;i <= 27;i++){
+			t = i.toString();
+			if(t.length == 1)t = '0'+t;
+			imgAry.push('../static/images/product/housing-img'+t+'.png');
+		}
+		$(window).load(function(){
+			sub.product(imgAry);
+		});
 	</script>
 </body>
 </html>

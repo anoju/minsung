@@ -328,12 +328,13 @@
 
 .productMasonryWrap{padding:136px 0;}
 .productMasonry{
-    width:1348px;margin:0 auto;max-width:100%;
-    
+    position:relative;width:1348px;margin:0 auto;max-width:100%;
     .size,
     .item{width:25%;}
+    .size{position:absolute;}
     .item{
-        float:left;padding:14px;
+        float:left;padding:14px;top:0;left:0;transform:scale(1);opacity:1;transition: 0.3s ease;
+        &.off{transform:scale(0.5);opacity:0.5;}
     }
     .img{
         position:relative;overflow:hidden;
