@@ -206,31 +206,23 @@ var common = {
 }
 
 var sub = {
+	productImg:function(array){
+		var $wrap = $('.productMasonry');
+		if($wrap.length){
+			for(var i = 0;i < array.length;i++){
+				appendEl = '<div class="item"><div class="img"><img src="'+array[i]+'" alt=""></div></div>';
+				$wrap.append( appendEl );
+			}
+		}
+	},
 	product:function(array) {
-		var $grid = $('.productMasonry');
-		if($grid.length){
-			var msnry = $grid.masonry({
+		var $wrap = $('.productMasonry');
+		if($wrap.length){
+			var msnry = $wrap.masonry({
 				itemSelector: '.item',
 				columnWidth: '.size',
 				percentPosition: true
 			});
-			var appendEl = null;
-			if(!!array){
-				for(var i = 0;i < array.length;i++){
-					console.log(array[i])
-					appendEl = '<div class="item off"><div class="img"><img src="'+array[i]+'" alt=""></div></div>';
-					msnry.append( appendEl ).masonry( 'appended', appendEl );
-				}
-				msnry.masonry();
-			}
-			if($grid.find('.item.off').length){
-				$grid.find('.item.off').each(function(i){
-					var $this = $(this);
-					setTimeout(function(){
-						$this.removeClass('off');
-					}, i*200);
-				});
-			}
 		}
 	}
 }
