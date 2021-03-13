@@ -59,6 +59,13 @@
 
 .aboutTxt .text .txt2 { margin-top: 70px; }
 
+@media screen and (max-width: 767px) { .aboutTxt { padding: 60px 0; }
+  .aboutTxt .innerBox { display: block; }
+  .aboutTxt .tit { font-size: 25px; }
+  .aboutTxt .text { padding-left: 0px; margin-top: 40px; }
+  .aboutTxt .text .txt1 { font-size: 18px; }
+  .aboutTxt .text .txt2 { margin-top: 20px; } }
+
 .imgAboutList { padding: 100px 0; overflow: hidden; }
 
 .imgAboutList .flex { -webkit-box-align: center; -ms-flex-align: center; align-items: center; }
@@ -81,7 +88,7 @@
 
 .imgAboutList ul li:hover .img img { -webkit-transform: scale(1.1); transform: scale(1.1); }
 
-@media screen and (max-width: 767px) { .imgAboutList { padding: 50px 0; }
+@media screen and (max-width: 767px) { .imgAboutList { padding: 60px 0; }
   .imgAboutList .text { padding: 0 10px 0 20px; }
   .imgAboutList .text .tit { font-size: 25px; }
   .imgAboutList .text .summary { margin-top: 10px; }
@@ -136,7 +143,7 @@
 
 .historyList .txt { margin-top: 20px; }
 
-@media screen and (max-width: 767px) { .historyList { padding: 50px 0 30px; }
+@media screen and (max-width: 767px) { .historyList { padding: 60px 0; }
   .historyList ul { width: auto; }
   .historyList ul li:before { top: 8px; width: 18px; height: 20px; }
   .historyList ul li:nth-child(odd) { padding-right: calc(50% + 30px); text-align: right; }
@@ -157,7 +164,7 @@
 @media screen and (max-width: 1400px) { .certificateList ul { margin: 100px -20px 0; }
   .certificateList ul li { padding: 0 20px; } }
 
-@media screen and (max-width: 767px) { .certificateList { padding: 50px 0 35px; }
+@media screen and (max-width: 767px) { .certificateList { padding: 60px 0 45px; }
   .certificateList ul { margin: 35px -10px 0; -ms-flex-wrap: wrap; flex-wrap: wrap; }
   .certificateList ul li { width: 50%; -webkit-box-flex: 0; -ms-flex: 0 0 50%; flex: 0 0 50%; padding: 15px 10px; }
   .certificateList .txt { margin-top: 15px; } }
@@ -217,7 +224,7 @@
 
 @media screen and (max-width: 1300px) { .imgCncList .img { -webkit-box-flex: 0; -ms-flex: 0 0 53%; flex: 0 0 53%; } }
 
-@media screen and (max-width: 767px) { .imgCncList { padding: 50px 0; }
+@media screen and (max-width: 767px) { .imgCncList { padding: 60px 0; }
   .imgCncList .flex { display: block; }
   .imgCncList .img .box { width: 60px; height: 60px; font-size: 20px; }
   .imgCncList .img + div { display: block; }
@@ -251,7 +258,7 @@
   .productMasonry .size, .productMasonry .item { width: 33.33%; }
   .productMasonry .item { padding: 10px; } }
 
-@media screen and (max-width: 767px) { .productMasonryWrap { padding: 45px 0; }
+@media screen and (max-width: 767px) { .productMasonryWrap { padding: 55px 0; }
   .productMasonry { margin: 0 -5px; }
   .productMasonry .size, .productMasonry .item { width: 50%; }
   .productMasonry .item { padding: 5px; } }

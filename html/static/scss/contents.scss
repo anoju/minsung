@@ -59,6 +59,20 @@
         .txt2{margin-top:70px;}
     }
 }
+@media screen and (max-width:767px) {
+    .aboutTxt{
+        padding:60px 0;
+        .innerBox{
+            display:block;
+        }
+        .tit{font-size:25px;}
+        .text{
+            padding-left:0px;margin-top:40px;
+            .txt1{font-size:18px;}
+            .txt2{margin-top:20px;}
+        }
+    }
+}
 
 .imgAboutList{
     padding:100px 0;overflow:hidden;
@@ -85,7 +99,7 @@
 }
 @media screen and (max-width:767px) {
 	.imgAboutList{
-        padding:50px 0;
+        padding:60px 0;
         .text{
             padding:0 10px 0 20px;
             .tit{font-size:25px;}
@@ -156,7 +170,7 @@
 }
 @media screen and (max-width:767px) {
     .historyList{
-        padding:50px 0 30px;
+        padding:60px 0;
         ul{
             width:auto;
             li{
@@ -195,7 +209,7 @@
 }
 @media screen and (max-width:767px) {
     .certificateList{
-        padding:50px 0 35px;
+        padding:60px 0 45px;
         ul{
             margin:35px -10px 0;flex-wrap:wrap;
             li{
@@ -281,7 +295,7 @@
 }
 @media screen and (max-width:767px) {
 	.imgCncList{
-        padding:50px 0;
+        padding:60px 0;
         .flex{display:block;}
         .img{
             .box{width:60px;height:60px;font-size:20px;}
@@ -334,7 +348,7 @@
     }
 }
 @media screen and (max-width:767px) {
-    .productMasonryWrap{padding:45px 0;}
+    .productMasonryWrap{padding:55px 0;}
     .productMasonry{
         margin:0 -5px;
         .size,
