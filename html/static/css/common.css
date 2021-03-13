@@ -128,15 +128,13 @@ body.scrollLock { overflow: hidden; }
 
 .innerBox { position: relative; max-width: 1400px; margin: 0 auto; }
 
-.pageTitle { padding: 135px 0 132px; background: #fff; }
+.pageTitle { padding: 85px 0; background: #fff; }
 
 .pageTitle .innerBox { display: -webkit-box; display: -ms-flexbox; display: flex; }
 
-.pageTitle .innerBox > div { -webkit-box-flex: 0; -ms-flex: 0 0 50%; flex: 0 0 50%; }
+.pageTitle .innerBox > div { width: 100%; }
 
-.pageTitle .innerBox > div + div { padding-left: 7.5%; padding-right: 5%; padding-top: 0.3rem; }
-
-.pageTitle .tit { font-size: 60px; letter-spacing: -0.02em; line-height: 1.25; }
+.pageTitle .tit { font-size: 48px; letter-spacing: -0.02em; line-height: 1.25; }
 
 .pageTitle .text { line-height: 1.9; }
 
@@ -160,7 +158,7 @@ body.scrollLock { overflow: hidden; }
 
 .pageVisual .pageVisualInner { height: 340px; }
 
-.pageVisual .pageTitle { -webkit-transform: translateY(-100%); transform: translateY(-100%); -webkit-transition: -webkit-transform 0.75s 1.2s ease; transition: -webkit-transform 0.75s 1.2s ease; transition: transform 0.75s 1.2s ease; transition: transform 0.75s 1.2s ease, -webkit-transform 0.75s 1.2s ease; }
+.pageVisual .pageTitle { z-index: 1; -webkit-transform: translateY(-100%); transform: translateY(-100%); -webkit-transition: -webkit-transform 0.75s 1.2s ease; transition: -webkit-transform 0.75s 1.2s ease; transition: transform 0.75s 1.2s ease; transition: transform 0.75s 1.2s ease, -webkit-transform 0.75s 1.2s ease; }
 
 .pageVisual .pageTitle .tit { -webkit-animation-delay: 2s; animation-delay: 2s; }
 

@@ -45,27 +45,39 @@
 .lineTable tbody th { text-align: left; }
 
 /* ============================== contents ============================== */
-.imgAboutList { padding: 150px 0; overflow: hidden; }
+.aboutTxt { background: #f7f7f7; padding: 150px 0; }
+
+.aboutTxt .innerBox { display: -webkit-box; display: -ms-flexbox; display: flex; }
+
+.aboutTxt .innerBox > div { width: 100%; }
+
+.aboutTxt .tit { font-size: 48px; }
+
+.aboutTxt .text { padding-left: 40px; }
+
+.aboutTxt .text .txt1 { font-size: 30px; }
+
+.aboutTxt .text .txt2 { margin-top: 70px; }
+
+.imgAboutList { padding: 100px 0; overflow: hidden; }
 
 .imgAboutList .flex { -webkit-box-align: center; -ms-flex-align: center; align-items: center; }
 
-.imgAboutList .flex > div { padding: 0 80px; -webkit-box-flex: 0; -ms-flex: 0 0 50%; flex: 0 0 50%; }
+.imgAboutList .flex > div { width: 100%; }
 
 .imgAboutList .img { overflow: hidden; }
 
 .imgAboutList .img img { width: 100%; -webkit-transition: 0.5s ease; transition: 0.5s ease; }
 
-.imgAboutList .text .tit { font-size: 60px; font-weight: bold; letter-spacing: -0.02em; }
+.imgAboutList .text { padding-left: 40px; }
 
-.imgAboutList .text .summary { margin-top: 25px; }
+.imgAboutList .text .tit { font-size: 48px; font-weight: bold; letter-spacing: -0.02em; }
 
-.imgAboutList ul { margin: 0 -80px; }
+.imgAboutList .text .summary { margin-top: 35px; }
 
 .imgAboutList ul li:nth-child(odd) .flex { -webkit-box-orient: horizontal; -webkit-box-direction: reverse; -ms-flex-direction: row-reverse; flex-direction: row-reverse; }
 
 .imgAboutList ul li:hover .img img { -webkit-transform: scale(1.1); transform: scale(1.1); }
-
-.imgAboutList ul li + li { margin-top: 100px; }
 
 @media screen and (max-width: 1400px) { .imgIntroList { padding: 100px 0; }
   .imgIntroList .flex > div { padding: 0 20px; }
@@ -80,19 +92,17 @@
   .imgAboutList ul { margin: 0 -10px; }
   .imgAboutList ul li + li { margin-top: 20px; } }
 
-.company { position: relative; overflow: hidden; }
+.company { position: relative; overflow: hidden; padding: 123px 0; }
 
-.company .bg { position: absolute; left: 0; width: 50%; height: 100%; background: #ffc001; overflow: hidden; }
+.company .bg { position: absolute; left: 0; top: 0; width: 50%; height: 100%; background: #ffc001; overflow: hidden; }
 
 .company .bg:after { content: ''; position: absolute; right: -55px; bottom: -165px; display: block; width: 516px; height: 590px; background: url(../images/introduce/company-bg.png) no-repeat center center; background-size: contain; -webkit-animation: bgRotate 30s linear infinite; animation: bgRotate 30s linear infinite; }
 
-.company .innerBox { padding-top: 125px; padding-bottom: 125px; }
+.company .flex > div { width: 100%; }
 
-.company .flex > div { -webkit-box-flex: 0; -ms-flex: 0 0 50%; flex: 0 0 50%; padding-right: 20px; }
+.company .tit { position: relative; color: #fff; font-size: 48px; line-height: 1.4; }
 
-.company .flex > div + div { padding-left: 14.28%; padding-right: 0; }
-
-.company .tit { position: relative; color: #fff; font-size: 50px; line-height: 1.4; margin-top: 5px; }
+.company .text { padding-left: 40px; }
 
 @-webkit-keyframes bgRotate { 0% { -webkit-transform: rotate(0deg); transform: rotate(0deg); }
   100% { -webkit-transform: rotate(360deg); transform: rotate(360deg); } }
@@ -111,7 +121,7 @@
   .company .flex > div + div { padding-left: 0; margin-top: 30px; }
   .company .tit { font-size: 35px; margin-top: 0; } }
 
-.historyList { color: #fff; padding: 134px 0 80px; }
+.historyList { color: #fff; padding: 150px 0; }
 
 .historyList:before { content: ''; display: block; position: absolute; left: 50%; top: 0; width: 1px; height: 100%; -webkit-transform: translateX(-50%); transform: translateX(-50%); background: rgba(255, 255, 255, 0.2); }
 
@@ -119,7 +129,7 @@
 
 .historyList ul li { position: relative; }
 
-.historyList ul li:before { content: ''; display: block; position: absolute; left: 50%; top: 30px; width: 27px; height: 30px; margin-left: -1px; -webkit-transform: translateX(-50%) scale(1) rotate(0deg); transform: translateX(-50%) scale(1) rotate(0deg); background: url(../images/introduce/history-dot.png) no-repeat center center; background-size: contain; -webkit-transition: 1s cubic-bezier(0, 0.8, 0.2, 1); transition: 1s cubic-bezier(0, 0.8, 0.2, 1); }
+.historyList ul li:before { content: ''; display: block; position: absolute; left: 50%; top: 21px; width: 27px; height: 30px; margin-left: -1px; -webkit-transform: translateX(-50%) scale(1) rotate(0deg); transform: translateX(-50%) scale(1) rotate(0deg); background: url(../images/introduce/history-dot.png) no-repeat center center; background-size: contain; -webkit-transition: 1s cubic-bezier(0, 0.8, 0.2, 1); transition: 1s cubic-bezier(0, 0.8, 0.2, 1); }
 
 .historyList ul li:nth-child(odd) { padding-right: 470px; }
 
@@ -127,9 +137,9 @@
 
 .historyList ul li:hover:before { -webkit-transform: translateX(-50%) scale(1.2) rotate(720deg); transform: translateX(-50%) scale(1.2) rotate(720deg); }
 
-.historyList .date { font-size: 60px; }
+.historyList .date { font-size: 48px; }
 
-.historyList .txt { margin-top: 19px; }
+.historyList .txt { margin-top: 20px; }
 
 @media screen and (max-width: 767px) { .historyList { padding: 50px 0 30px; }
   .historyList ul { width: auto; }
@@ -139,17 +149,15 @@
   .historyList .date { font-size: 25px; }
   .historyList .txt { margin-top: 10px; } }
 
-.certificateList { background: #efefef; padding: 150px 0; }
+.certificateList { background: #efefef; padding: 120px 0 100px; }
 
-.certificateList ul { display: -webkit-box; display: -ms-flexbox; display: flex; }
+.certificateList ul { display: -webkit-box; display: -ms-flexbox; display: flex; margin: 100px -40px 0; }
 
-.certificateList ul li { width: 26%; text-align: center; }
-
-.certificateList ul li + li { margin-left: 11%; }
+.certificateList ul li { width: 25%; text-align: center; padding: 0 40px; }
 
 .certificateList .img img { max-width: 100%; }
 
-.certificateList .txt { margin-top: 25px; }
+.certificateList .txt { margin-top: 30px; }
 
 @media screen and (max-width: 767px) { .certificateList { padding: 50px 0; }
   .certificateList ul { display: block; }
@@ -158,23 +166,17 @@
   .certificateList .img { padding: 0 30px; }
   .certificateList .txt { margin-top: 15px; } }
 
-.locationWrap { color: #fff; padding: 170px 0; }
+.locationWrap { color: #fff; }
 
-.locationWrap .innerBox { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-pack: justify; -ms-flex-pack: justify; justify-content: space-between; }
+.locationWrap .innerBox { height: 440px; display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-align: center; -ms-flex-align: center; align-items: center; }
 
-.locationWrap ul:first-child { padding-right: 10px; }
+.locationWrap ul li { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-align: center; -ms-flex-align: center; align-items: center; }
 
-.locationWrap ul:last-child { padding-left: 10px; }
+.locationWrap ul li + li { margin-top: 12px; }
 
-.locationWrap ul li { display: -webkit-box; display: -ms-flexbox; display: flex; }
+.locationWrap .th { position: relative; white-space: nowrap; }
 
-.locationWrap ul li + li { margin-top: 22px; }
-
-.locationWrap .th { position: relative; font-size: 28px; padding-right: 41px; white-space: nowrap; }
-
-.locationWrap .th:after { content: ''; display: block; position: absolute; right: 0; top: 8px; width: 1px; height: 25px; background: #fff; }
-
-.locationWrap .td { font-size: 24px; padding: 1px 0 1px 40px; word-break: break-all; }
+.locationWrap .td { font-size: 16px; margin-left: 20px; word-break: break-all; }
 
 .locationMap { height: 743px; background: #eee; }
 
