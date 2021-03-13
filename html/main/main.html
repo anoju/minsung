@@ -23,107 +23,159 @@
 	<section id="container" class="main">
 		<section class="mainSec01">
 			<div class="visualBg">
-				<video autoplay loop muted poster="../static/images/main/main-posterg.png"><source src="../static/video/main-visual.webm" type="video/webm"><source src="../static/video/main-visual.mp4" type="video/mp4"></video>
+				<video autoplay loop muted poster="../static/images/main/main-poster.png"><source src="../static/video/main-visual.webm" type="video/webm"><source src="../static/video/main-visual.mp4" type="video/mp4"></video>
 				<div class="mask"></div>
 			</div>
 			<div class="innerBox">
-				<div class="textBox">
-					<h1 class="ui-spl-txt">More than<br />Just Machining</h1>
-					<div class="text hidden">
-						<div data-animation="fadeInUpBig" data-waypoint-once="true" data-delay="2100">민성정밀은 최고의 기술력과 품질 신뢰성으로 제조업의 미래를 이끌어갑니다.</div>
+				<div class="swiper-container mainSwiper">
+					<div class="swiper-wrapper">
+						<div class="swiper-slide">
+							<div class="slideItem">
+								<div>
+									<div class="tit"><strong>Excellence with every Part , <br>for every Need</strong></div>
+									<div class="txt">
+										<div>민성정밀은 최고의 기술력과 품질 신뢰성으로 <br>제조업의 미래를 이끌어갑니다</div>
+									</div>
+									<div class="link">
+										<a href="#none" class="btnClickEf">회사소개</a>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="swiper-slide">
+							<div class="slideItem">
+								<div>
+									<div class="tit"><strong>explosion proof <br>Product</strong></div>
+									<div class="txt">
+										<div>민성정밀은 안전성을 인증받은 <br>방폭제품을 생산합니다.</div>
+									</div>
+									<div class="link">
+										<a href="#none" class="btnClickEf">방폭제품 보기</a>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					
+					<!-- Add Arrows -->
+					<div class="swiper-navi">
+						<div class="swiper-button-prev"></div>
+						<div class="swiper-button-next"></div>
+					</div>
+
+					<!-- Add Pagination -->
+					<div class="swiper-control">
+						<div class="swiper-pagination"></div>
+						<button type="button" class="swiper-auto-ctl" aria-label="메인배너 자동롤링 컨트롤"></button>
 					</div>
 				</div>
+				
 			</div>
 		</section>
 
 		<section class="mainSec02">
-			<div class="innerBox">
-				<div class="textBox">
-					<h1 class="ui-spl-txt">CAPABILITIES</h1>
-					<div class="text hidden">
-						<div data-animation="fadeInUpBig" data-waypoint-once="true" data-delay="1200">민성정밀은 아래 다양한 영역의 핵심역량을 보유하고 있습니다.</div>
-					</div>
-					<div class="link hidden">
-						<a href="#none" class="btnClickEf" data-animation="fadeInUpBig" data-waypoint-once="true" data-delay="1400">WHAT IS EXPLOSION PROOF ?</a>
-					</div>
+			<div class="sec1">
+				<div class="innerBox">
+					<a href="#none" class="textBox btnClickEf">
+						<h1 class="hidden"><span class="block" data-animation="fadeInUpBig" data-waypoint-once="true">CAPABILITIES</span></h1>
+						<div class="hidden">
+							<div class="text" data-animation="fadeInUpBig" data-waypoint-once="true" data-delay="200">민성정밀은 아래 다양한 영역의 핵심역량을 보유하고 있습니다.</div>
+						</div>
+					</a>
+					<ul class="imgBox">
+						<li data-animation="zoomIn" data-waypoint-once="true">
+							<div class="box">
+								<img src="../static/images/main/main-box1.png" alt="">
+								<div class="txt">
+									<strong>방폭부품 제조</strong>
+									<div>Explosive parts<br>manufacturing</div>
+								</div>
+							</div>
+						</li>
+						<li data-animation="zoomIn" data-delay="200" data-waypoint-once="true">
+							<div class="box">
+								<img src="../static/images/main/main-box2.png" alt="">
+								<div class="txt">
+									<strong>일반부품 제조 및 조립</strong>
+									<div>General Machining<br>and Fabrication</div>
+								</div>
+							</div>
+						</li>
+						<li data-animation="zoomIn" data-delay="400" data-waypoint-once="true">
+							<div class="box">
+								<img src="../static/images/main/main-box3.png" alt="">
+								<div class="txt">
+									<strong>샘플 제작</strong>
+									<div>CAD Prototyping</div>
+								</div>
+							</div>
+						</li>
+						<li data-animation="zoomIn" data-delay="600" data-waypoint-once="true">
+							<div class="box">
+								<img src="../static/images/main/main-box4.png" alt="">
+								<div class="txt">
+									<strong>측정</strong>
+									<div>Coordinate Measuring</div>
+								</div>
+							</div>
+						</li>
+					</ul>
 				</div>
-				<ul class="imgBox">
-					<li data-animation="zoomIn" data-waypoint-once="true">
-						<a href="#none" class="box btnClickEf">
-							<img src="../static/images/main/main-box1.png" alt="">
-							<div class="txt">
-								<strong>방폭부품 제조</strong>
-								<div>Explosive parts<br>manufacturing</div>
-							</div>
-						</a>
-					</li>
-					<li data-animation="zoomIn" data-delay="200" data-waypoint-once="true">
-						<a href="#none" class="box btnClickEf">
-							<img src="../static/images/main/main-box2.png" alt="">
-							<div class="txt">
-								<strong>일반부품 제조 및 조립</strong>
-								<div>General Machining<br>and Fabrication</div>
-							</div>
-						</a>
-					</li>
-					<li data-animation="zoomIn" data-delay="400" data-waypoint-once="true">
-						<a href="#none" class="box btnClickEf">
-							<img src="../static/images/main/main-box3.png" alt="">
-							<div class="txt">
-								<strong>샘플 제작</strong>
-								<div>CAD Prototyping</div>
-							</div>
-						</a>
-					</li>
-					<li data-animation="zoomIn" data-delay="600" data-waypoint-once="true">
-						<a href="#none" class="box btnClickEf">
-							<img src="../static/images/main/main-box4.png" alt="">
-							<div class="txt">
-								<strong>측정</strong>
-								<div>Coordinate Measuring</div>
-							</div>
-						</a>
-					</li>
-				</ul>
+			</div>
+			<div class="sec2">
+				<div class="innerBox">
+					<div>
+						<div class="link hidden">
+							<a href="#none" class="btnClickEf" data-animation="fadeInUpBig" data-waypoint-once="true" data-delay="200">WHAT IS EXPLOSION PROOF ?</a>
+						</div>
+					</div>
+					<div>
+						<div class="txt">
+							방폭형 기기는 주변에 발화성가스 따위가 존재하여 폭발할 수 있는 환경에 <br>견딜수 있는 구조로 설계된 것을 말하며 <br>
+							민성정밀은 이러한 설계 및 가공 기술과 인증을 보유하고 있습니다.
+						</div>
+					</div>
+
+				</div>
 			</div>
 		</section>
 
 		<section class="mainSec03">
 			<div class="innerBox">
-				<div class="textBox">
-					<h1 class="ui-spl-txt">EQUIPMENT</h1>
-					<div class="text hidden">
-						<div data-animation="fadeInUpBig" data-waypoint-once="true" data-delay="900">품질 관리 시스템에 대한 민성정밀㈜의 혼신의 노력은 전 과정에 걸쳐 나타납니다. <br>
+				<a href="#none" class="textBox btnClickEf">
+					<h1 class="hidden"><span class="block" data-animation="fadeInUpBig" data-waypoint-once="true">EQUIPMENT</span></h1>
+					<div class="hidden">
+						<div class="text" data-animation="fadeInUpBig" data-waypoint-once="true" data-delay="200">품질 관리 시스템에 대한 민성정밀㈜의 혼신의 노력은 전 과정에 걸쳐 나타납니다. <br>
 						효과적인 엔지니어링과 사전 계획 수립을 통해 최고의 품질을 보장합니다.</div>
 					</div>
-				</div>
+				</a>
 				<ul class="productBox">
 					<li data-animation="fadeInUp" data-waypoint-once="true">
-						<a href="#none" class="box btnClickEf">
+						<div class="box">
 							<img src="../static/images/main/main-product1.png" alt="">
 							<div class="txt">
 								<strong>CNC</strong>
 								<div>Computerized<br>Numerical Control</div>
 							</div>
-						</a>
+						</div>
 					</li>
 					<li data-animation="fadeInUp" data-delay="200" data-waypoint-once="true">
-						<a href="#none" class="box btnClickEf">
+						<div class="box">
 							<img src="../static/images/main/main-product2.png" alt="">
 							<div class="txt">
 								<strong>MCT</strong>
 								<div>Machining<br>Center Tool</div>
 							</div>
-						</a>
+						</div>
 					</li>
 					<li data-animation="fadeInUp" data-delay="400" data-waypoint-once="true">
-						<a href="#none" class="box btnClickEf">
+						<div class="box">
 							<img src="../static/images/main/main-product3.png" alt="">
 							<div class="txt">
 								<strong>측정장비</strong>
 								<div>Measuring<br>Equipment</div>
 							</div>
-						</a>
+						</div>
 					</li>
 				</ul>
 			</div>
@@ -133,9 +185,9 @@
 			<div class="innerBox">
 				<div class="textBox">
 					<a href="#none" class="btnClickEf">
-						<h1 class="ui-spl-txt">MINSUNG PRECISION,<br>SINCE 2009</h1>
-						<div class="text hidden">
-							<div data-animation="fadeInUpBig" data-waypoint-once="true" data-delay="2600">민성정밀은 최고의 기술력과 품질, 그리고 최상의 고객서비스를 지향합니다.</div>
+						<h1 class="hidden"><span class="block" data-animation="fadeInUpBig" data-waypoint-once="true">MINSUNG PRECISION,<br>SINCE 2009</span></h1>
+						<div class="hidden">
+							<div class="text" data-animation="fadeInUpBig" data-waypoint-once="true" data-delay="200">민성정밀은 최고의 기술력과 품질, 그리고 최상의 고객서비스를 지향합니다.</div>
 						</div>
 					</a>
 				</div>
@@ -145,9 +197,9 @@
 		<section class="mainSec05">
 			<div class="innerBox">
 				<div class="textBox">
-					<h1 class="ui-spl-txt">INQUIRY</h1>
+					<h1 class="hidden"><span class="block" data-animation="fadeInUpBig" data-waypoint-once="true">INQUIRY</span></h1>
 					<div class="text hidden">
-						<div data-animation="fadeInUpBig" data-waypoint-once="true" data-delay="700">편리하게 견적을 신청해 보세요.</div>
+						<div data-animation="fadeInUpBig" data-waypoint-once="true" data-delay="200">편리하게 견적을 신청해 보세요.</div>
 					</div>
 					<div class="mail">
 						<div>

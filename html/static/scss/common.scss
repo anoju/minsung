@@ -27,6 +27,8 @@ body.scrollLock {overflow: hidden;}
 .blind { overflow:hidden; position:absolute; top:0; left:0; width:0; height:0; font-size:0;}
 .hidden{overflow:hidden;}
 .hide{display:none;}
+.block{display:block;}
+.inblock{display:inline-block;}
 .pc_hide{display:none;}
 @media screen and (max-width:767px) {
 	.pc_hide{display:block;}

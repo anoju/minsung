@@ -30,6 +30,10 @@ body.scrollLock { overflow: hidden; }
 
 .hide { display: none; }
 
+.block { display: block; }
+
+.inblock { display: inline-block; }
+
 .pc_hide { display: none; }
 
 @media screen and (max-width: 767px) { .pc_hide { display: block; }

@@ -28,9 +28,6 @@ $(function(){
 	/* ==============================
 	* content
 	* ============================== */
-	imgChange();
-	if($('.ui-spl-txt').length)$('.ui-spl-txt').splitText();
-
 	$(window).load(function(){
 		if($('.loading').length){
 			$('.loading').addClass('off').delay(500).queue(function(next){
@@ -227,6 +224,7 @@ var sub = {
 	}
 }
 
+var mainSwiper;
 var main = {
 	video: function(){
 		var ratio = {v:16,h:9} //비디오비율 16x9
@@ -255,6 +253,35 @@ var main = {
 			}
 		}
 	},
+	swiper: function(){
+		mainSwiper = new Swiper('.mainSwiper', {
+			pagination: {
+				el: '.swiper-pagination',
+				type: 'fraction',
+			},
+			autoplay: {
+				delay: 3500,
+				disableOnInteraction: false,
+			},
+			navigation: {
+				nextEl: '.swiper-button-next',
+				prevEl: '.swiper-button-prev',
+			},
+		});
+
+		$(document).on('click','.mainSwiper .swiper-auto-ctl',function(e){
+			e.preventDefault();
+			if($(this).hasClass('play')){
+				console.log('play');
+				mainSwiper.autoplay.start();
+				$(this).removeClass('play');
+			}else{
+				console.log('stop');
+				mainSwiper.autoplay.stop();
+				$(this).addClass('play');
+			}
+		});
+	},
 	header: function(){
 		var scrollTop = $(window).scrollTop();
 		var offsetTop = $('.mainSec02').offset().top - $('#header').outerHeight();
@@ -266,6 +293,7 @@ var main = {
 		}
 	},
 	init: function(){
+		main.swiper();
 		$(window).resize(function(){
 			main.header();
 			main.video();
@@ -278,35 +306,6 @@ var main = {
 		$(window).resize();
 	}
 }
-
-var imgChange = function(){
-	if($('*[data-mo-image]').length){
-		resizeImg();
-		$(window).resize(function(){
-			resizeImg();
-		});
-		
-		function resizeImg(){
-			var width = $(window).outerWidth();
-			$('*[data-mo-image]').each(function(){
-				var name = $(this).prop('tagName');
-				if(name === 'IMG'){
-					if( width < 768){
-						$(this).attr('src',$(this).data('mo-image'));
-					} else {
-						$(this).attr('src',$(this).data('pc-image'));
-					}
-				}else{
-					if( width < 768){
-						$(this).css('background-image','url(' + $(this).data('mo-image') + ')');
-					} else {
-						$(this).css('background-image','url(' + $(this).data('pc-image') + ')');
-					}
-				}
-			});
-		};
-	}
-};
 
 /* 레이어 팝업 */
 var layerpopup = function(){
@@ -365,81 +364,6 @@ var layerPopClose = function(target){
 		}
 	});
 }
-
-//글자별 애니메이션: 다른태그와 사용가능 '<','>' 사용불가
-//data-animation="on" 과 같이 사용가능
-//$('.txt').splitText();
-$.fn.splitText = function(speed, delay){
-	return this.each(function(){
-		var $this = $(this),
-			$thisTxt = $.trim($(this).text()),
-			$originHtml = $(this).html(),
-			$split = $(this).html().split(''),
-			$html = '',
-			$tag = '',
-			$isTag = false,
-			$style = $(this).attr('style'),
-			j = 0,
-			$speed = !!speed?speed:$(this).data('speed'),
-			$delay = !!delay?delay:$(this).data('delay'),
-			$distance = $(this).data('distance');
-		
-		$this.attr({
-			'role':'text',
-			'aria-label': $thisTxt
-		});
-		if($speed == null)$speed = 100;
-		if($delay == null)$delay = 0;
-
-		$this.css('height',$this.height()).html('');
-		//for(var i in $split){
-		for(var i=0; i<$split.length; i++){
-			if($isTag){
-				$tag += $split[i];
-				if($split[i] == '>'){
-					$isTag = false;
-					$html += $tag;
-				}
-			}else{
-				if($split[i] == '<'){
-					$tag = $split[i];
-					$isTag = true;
-				}else if($split[i] == ' '){
-					$html += '<span class="ui-spl-item">&nbsp;</span>';
-				}else{
-					j++;
-					$html += '<span class="ui-spl-item" style="';
-					$html += '-webkit-transition-delay:'+(j*$speed+$delay)+'ms;';
-					$html += 'transition-delay:'+(j*$speed+$delay)+'ms;';
-					if($distance != null){
-						var $posX = randomNumber(-$distance,$distance,0),
-							$posY = randomNumber(-$distance,$distance,0),
-							$posZ = randomNumber(-$distance,$distance,0),
-							$scale = randomNumber(0.3,0.8,1);
-
-						$html += '-webkit-transform:translate3d('+$posX+'px,'+$posY+'px,'+$posZ+'px) scale('+$scale+');';
-						$html += 'transform:translate3d('+$posX+'px,'+$posY+'px,'+$posZ+'px) scale('+$scale+');';
-					}
-					$html += '">';
-					$html += $split[i];
-					$html += '</span>';
-				}
-			}
-		}
-		$this.html($html).removeAttr('style');
-		if($style)$this.attr('style',$style);
-
-		$this.waypoint({
-			handler: function(direction) {
-				$this.addClass('on');
-				setTimeout(function(){
-					$this.html($originHtml);
-				},(j*100)+1000);
-			},
-			offset: '90%'
-		})
-	});
-};
 
 /* parallax scrolling motion */
 /*
