@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta content="IE=edge" http-equiv="X-UA-Compatible">
+<meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width" />
+<title>(주)민성정밀</title>
+<link rel="icon" href="../static/images/favicon.png">
+<link href="../static/css/front.css" rel="stylesheet" />
+<script type="text/javascript" src="../static/js/common.js"></script>
+<script type="text/javascript" src="../static/js/ui.js"></script>
+</head>
+<body>
+	<div class="loading"></div>
+
+	<!-- 헤더영역 -->
+	<header id="headerWrap" data-include="../include/header.html"></header>
+	<!-- //헤더영역 -->
+
+	<!-- 컨텐츠 영역 -->
+	<section id="container">
+		<div class="pageVisual prevention">
+			<div class="pageTitle">
+				<div class="innerBox">
+					<div>
+						<div class="hidden">
+							<h1 class="tit" data-animation="fadeInUpBig" data-waypoint-once="true">방폭 부품</h1>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="pageVisualInner"></div>
+		</div>
+		<div class="productMasonryWrap">
+			<div class="innerBox">
+				<div class="productMasonry">
+					<div class="size"></div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- //컨텐츠 영역 -->
+
+	<!-- 하단 영역 -->
+	<footer id="footerWrap" data-include="../include/footer.html"></footer>
+	<!-- //하단 영역 -->
+
+	<script>
+		var imgAry = [];
+		var t = null;
+		for(var i = 1;i <= 36;i++){
+			t = i.toString();
+			if(t.length == 1)t = '0'+t;
+			imgAry.push('../static/images/product/prevention-img'+t+'.png');
+		}
+		sub.productImg(imgAry);
+		$(window).load(function(){
+			sub.product();
+		});
+	</script>
+</body>
+</html>
