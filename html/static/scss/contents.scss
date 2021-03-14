@@ -509,3 +509,127 @@ input[type="checkbox"]{margin:0;}
         .button{width:100%;}
     }
 }
+
+.listTableWrap{padding-bottom:150px;}
+.listTable{
+    table{
+        width:100%;border-top:2px solid #ffc001;
+        th,
+        td{
+            height:75px;padding:10px;border-bottom:1px solid #ccc;text-align:center;vertical-align:middle;
+            &.left{text-align:left;}
+        }
+    }
+}
+.icoFile{display:inline-block;width:21px;height:21px;background:url(../images/common/icoFile.png) no-repeat center center;background-size:contain;font-size:3px;color:transparent;overflow:hidden;}
+.btnFile{display:inline-block;padding-left:25px;background:url(../images/common/icoFile.png) no-repeat left center;font-size:16px;}
+.paging{
+    margin-top:100px; font-size:0; text-align:center;
+    strong,
+    a { display:inline-block; width:32px; height:32px; margin:0 5px;  vertical-align:middle; font-size:16px; line-height:32px;border-radius:50%;}
+    strong { color:#fff; background:#ffc001; }
+    a[class*=btn] { border:0; font-size:0;background-repeat:no-repeat;background-position:center center;background-size:contain;}
+    
+    a.btnFirst { background-image:url('../images/common/paging_first.png');}
+    a.btnPrev { background-image:url('../images/common/paging_prev.png');margin-right:21px;}
+    a.btnNext { background-image:url('../images/common/paging_next.png');margin-left:21px;}
+    a.btnLast { background-image:url('../images/common/paging_last.png');}
+}
+
+@media screen and (max-width:767px) {
+    .listTableWrap{padding-bottom:60px;}
+    .listTable{
+        overflow-y:hidden;overflow-x:auto;
+        table{
+            white-space:nowrap;
+            th,
+            td{
+                height:50px;
+            }
+        }
+    }
+    .icoFile{width:14px;height:14px;}
+    .btnFile{padding-left:20px;font-size:14px;background-size:14px auto;}
+    .paging{
+        margin-top:40px;
+        strong,
+        a {width:24px; height:24px; margin:0 3px;font-size:14px;line-height:24px;}
+        a.btnPrev {margin-right:7px;}
+        a.btnNext {margin-left:7px;}
+    }
+}
+
+.listView{
+    border-top:2px solid #ffc001;
+    >div{border-bottom:1px solid #ccc;}
+    >.info{
+        display:flex;justify-content:space-between;align-items:center;padding:33px 0;
+        .tit{font-size:24px;}
+        ul{
+            display:flex;font-weight:200;white-space:nowrap;align-items:center;font-size:16px;
+            li{
+                position:relative;padding:0 20px;
+                &:first-child{padding-left:0;}
+                &:last-child{padding-right:0;}
+                +li:before{content:'';display:block;position:absolute;left:0;top:50%;width:1px;height:15px;background:#e8e8e8;transform:translateY(-50%);}
+            }
+        }
+    }
+    >.cont{padding:75px;word-break:break-all;min-height:435px;}
+    >.navi{
+        >a,
+        >div{
+            position:relative;display:block;padding:25px 110px 25px 0;overflow:hidden;white-space:nowrap;text-overflow:ellipsis;
+            &:before,
+            &:after{content:'';display:block;position:absolute;right:24px;top:50%;transform:translateY(-50%);}
+            &:before{width:16px;height:10px;background-repeat:no-repeat;background-position:center center;background-size:contain;}
+            &:after{right:51px;}
+            +a,
+            +div{border-top:1px solid #ccc;}
+        }
+        >div{
+            color:#999;
+            &:before{opacity:0.3;}
+        }
+        .prev:before{background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' width='16px' height='10px'%3E%3Cpath fill-rule='evenodd' fill='rgb(19, 19, 19)' d='M14.408,10.009 L8.000,3.329 L1.592,10.009 L-0.010,8.339 L8.000,-0.011 L16.009,8.339 L14.408,10.009 Z'/%3E%3C/svg%3E");}
+        .next:before{background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' width='16px' height='10px'%3E%3Cpath fill-rule='evenodd' fill='rgb(19, 19, 19)' d='M16.010,1.661 L8.000,10.011 L-0.009,1.661 L1.592,-0.009 L8.000,6.671 L14.408,-0.009 L16.010,1.661 Z'/%3E%3C/svg%3E");}
+        .prev:after{content:'이전글';}
+        .next:after{content:'다음글';}
+    }
+}
+.listViewBtn{
+    text-align:center;margin-top:100px;
+    .button{width:400px;max-width:100%;}
+}
+@media screen and (max-width:1000px) {
+    .listView{
+        >.info{
+            display:block;
+            ul{
+                margin-top:15px;
+            }
+        }
+    }
+}
+@media screen and (max-width:767px) {
+    .listView{
+        >.info{
+            padding:20px 0;
+            .tit{font-size:18px;}
+            ul{font-size:14px;}
+        }
+        >.cont{padding:30px;}
+        >.navi{
+            >a,
+            >div{
+                padding:20px 0 20px 30px;
+                &:before{right:auto;left:0;}
+                &:after{content:none !important;}
+            }
+        }
+    }
+    .listViewBtn{
+        margin-top:40px;
+        .button{width:100%;}
+    }
+}

@@ -42,6 +42,12 @@ body.scrollLock {overflow: hidden;}
 .flexRowReverse{flex-direction:row-reverse;}
 .flexColReverse{flex-direction:column-reverse;}
 
+/* dotList */
+.dotList li { position:relative; padding-left:20px;}
+.dotList li:before { content:''; display:block; position:absolute; top:0.7em; left:0; width:3px; height:3px; border-radius:50%; background:#999999;}
+.dashList li { position:relative; padding-left:15px;}
+.dashList li:before { content:''; display:block; position:absolute; top:11px; left:0; width:4px; height:2px; background:#788391;}
+
 /* ==============================
  * layout
  * ============================== */
@@ -295,7 +301,7 @@ body.scrollLock {overflow: hidden;}
                 +div{padding-left:0;padding-right:0;padding-top:1.5rem;}
             }
         }
-        .tit{font-size:35px;}
+        .tit{font-size:30px;}
         .text{
             line-height:1.5;
             >div+div{margin-top:1rem;}

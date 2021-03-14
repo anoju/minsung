@@ -1,0 +1,31 @@
+/* layerPopup */
+.layerPopWrap { visibility: hidden; overflow-y: auto; display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-pack: center; -ms-flex-pack: center; justify-content: center; -webkit-box-align: center; -ms-flex-align: center; align-items: center; position: fixed; top: 0; left: 0; z-index: 150; width: 100%; height: 100%; padding: 20px 20px; z-index: 100; opacity: 0; -webkit-transition: all .2s ease; transition: all .2s ease; background: rgba(0, 0, 0, 0.7); }
+
+.layerPopWrap .btnClose { display: block; position: absolute; top: 35px; right: 45px; width: 50px; height: 50px; font-size: 0; background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' width='20px' height='20px'%3E%3Cpath fill-rule='evenodd' fill='rgb(17, 17, 17)' d='M19.192,17.778 L17.778,19.192 L10.000,11.414 L2.222,19.192 L0.808,17.778 L8.586,10.000 L0.808,2.221 L2.222,0.807 L10.000,8.585 L17.778,0.807 L19.192,2.221 L11.414,10.000 L19.192,17.778 Z'/%3E%3C/svg%3E") no-repeat center center; }
+
+.layerPopWrap.on { visibility: visible; opacity: 1; }
+
+.layerPopWrap.on .layerPopCont { -webkit-animation: fadeInDown .4s ease-in-out forwards; animation: fadeInDown .4s ease-in-out forwards; }
+
+.layerPopWrap .layerPopCont { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-orient: vertical; -webkit-box-direction: normal; -ms-flex-direction: column; flex-direction: column; position: relative; width: 600px; max-width: 100%; max-height: 100%; background: #fff; border-radius: 20px; overflow: hidden; }
+
+.layerPopWrap .layerPopCont h1 { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-flex: 0; -ms-flex: 0 0 100px; flex: 0 0 100px; padding: 43px 85px 23px 60px; font-size: 24px; color: #111111; -webkit-box-align: center; -ms-flex-align: center; align-items: center; border-bottom: 1px solid #ccc; }
+
+.layerPopWrap .popCont { -webkit-box-flex: 1; -ms-flex: 1 1 auto; flex: 1 1 auto; padding: 40px 60px 80px; overflow-x: hidden; overflow-y: auto; }
+
+@media screen and (max-width: 767px) { .layerPopWrap .btnClose { width: 40px; height: 40px; right: 10px; top: 20px; }
+  .layerPopWrap .layerPopCont h1 { font-size: 20px; padding: 25px 50px 20px 20px; }
+  .layerPopWrap .popCont { padding: 20px 20px 30px; } }
+
+.layerPopWrap .agreePopCont { overflow-x: hidden; overflow-y: auto; max-height: 380px; }
+
+.layerPopWrap .agreePopCont .tit { margin-top: 40px; color: #ffc001; font-weight: bold; }
+
+.layerPopWrap .agreePopCont .tit:first-child { margin-top: 0; }
+
+.layerPopWrap .agreePopCont .dotList { margin-top: 10px; }
+
+.layerPopWrap .agreePopCont .dotList li { font-size: 0.889em; }
+
+.layerPopWrap .agreePopCont .dotList li + li { margin-top: 10px; }
+/*# sourceMappingURL=popup.css.map */
