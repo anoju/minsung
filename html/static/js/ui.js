@@ -91,13 +91,17 @@ var common = {
 		if($('.gnb').length){
 			var $link = $('.gnb>ul a');
 			var $path = location.pathname;
+			var $title = $('.pageTitle h1').text();
 			$link.each(function(){
 				var $this = $(this);
+				var $thisTxt = $this.text();;
 				var $hrefAry = $this.attr('href').split('/');
 				var $href = $hrefAry.pop();
 				var $category = $hrefAry.pop();
 				var isActive = false;
 				if(($path.indexOf($href) > -1) && ($path.indexOf($category) > -1)){
+					isActive = true;
+				}else if($title === $thisTxt){
 					isActive = true;
 				}
 

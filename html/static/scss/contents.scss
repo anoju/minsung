@@ -633,3 +633,88 @@ input[type="checkbox"]{margin:0;}
         .button{width:100%;}
     }
 }
+
+.processWrap{
+    padding:140px 0;
+    .list{
+        margin-top:95px;overflow:hidden;
+        ol{
+            &:after{content:'';display:block;clear:both;}
+            margin-right:-70px;
+            >li{
+                float:left;width:16.66%;padding-right:70px;
+                &:last-child{
+                    .circle:after{content:none;}            
+                }
+            }
+        }
+    }
+    .circle{
+        position:relative;display:flex;width:175px;height:175px;color:#ffc001;font-weight:bold;background:#262f61;border-radius:50%;align-items:center;justify-content:center;flex-direction:column;
+        &:after{content:'';position:absolute;right:-37px;bottom:50%;display:block;width:40px;height:15px;transform:skewX(45deg);border:1px solid #262f61;border-width:0 1px 1px 0;transform-origin: right bottom;}
+        .num{margin-bottom:12px;}
+    }
+    .cont{
+        padding-left:35px;padding-top:10px;font-size:20px;line-height:1.5;
+        dt{font-weight:bold;}
+        .th{margin-top:30px;text-transform:uppercase;}
+    }
+}
+@media screen and (max-width:1400px) {
+    .processWrap{
+        .list{
+            ol{
+                margin-right:0;
+                >li{
+                    width:25%;padding-bottom:50px;padding-right:50px;
+                    &:nth-child(4n+1){clear:both;}
+                }
+            }
+        }
+    }
+}
+@media screen and (max-width:1200px) {
+    .processWrap{
+        .list{
+            ol{
+                margin-right:0;
+                >li{
+                    float:none;width:auto;
+                    >.in{display:flex;}
+                    +li{margin-top:30px;}
+                }
+            }
+        }
+        .circle{
+            margin-bottom:40px;flex:0 0 175px;
+            &:after{bottom:-37px;right:auto;left:50%;height:40px;width:15px;transform:skewY(-45deg);border-width:0 0 1px 1px;transform-origin:left bottom;}
+        }
+        .cont{
+            flex: 1 1 auto;display:flex;padding-left:20px;padding-top:0;
+            flex-wrap:wrap;
+            >dl,
+            >div{padding:10px 20px 20px;}
+            .th{margin-top:0;}
+        }
+    }
+}
+@media screen and (max-width:767px) {
+    .processWrap{
+        padding:60px 0;
+        .list{
+            margin-top:40px;
+            ol{
+                >li{
+                    +li{margin-top:15px;}
+                }
+            }
+        }
+        .circle{
+            width:140px;height:140px;flex:0 0 140px;
+            .num{margin-bottom:10px;}
+        }
+        .cont{
+            font-size:16px;padding-left:0;
+        }
+    }
+}
