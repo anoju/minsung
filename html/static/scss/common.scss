@@ -286,6 +286,16 @@ body.scrollLock {overflow: hidden;}
         }
     }
 }
+@media (max-width:1000px) {
+    .pageTitle{
+        .innerBox{
+            display:block;
+            >div{
+                +div{padding-left:0;padding-right:0;padding-top:40px;}
+            }
+        }
+    }
+}
 @media (max-width:767px) {
     .loading:before{width:82px;height:94px;margin:-47px 0 0 -41px;}
     #header{
@@ -295,18 +305,13 @@ body.scrollLock {overflow: hidden;}
     #container{margin-top:60px;min-height:auto;}
     .pageTitle{
         padding:50px 0;
-        .innerBox{
-            display:block;
-            >div{
-                +div{padding-left:0;padding-right:0;padding-top:1.5rem;}
-            }
-        }
         .tit{font-size:30px;}
         .text{
             line-height:1.5;
             >div+div{margin-top:1rem;}
         }
     }
+    // .pageVisual{background-attachment:local;}
     .pageVisual .pageVisualInner{height:200px;}
     #footer{
         padding:20px 0;

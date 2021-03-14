@@ -264,13 +264,14 @@ body.scrollLock { overflow: hidden; }
   .gnbWrap .util > a { color: #131313 !important; }
   .gnbWrap .util .language a.on { color: #131313 !important; } }
 
+@media (max-width: 1000px) { .pageTitle .innerBox { display: block; }
+  .pageTitle .innerBox > div + div { padding-left: 0; padding-right: 0; padding-top: 40px; } }
+
 @media (max-width: 767px) { .loading:before { width: 82px; height: 94px; margin: -47px 0 0 -41px; }
   #header .innerBox { height: 59px; }
   #header .logo a { width: 72px; height: 26px; }
   #container { margin-top: 60px; min-height: auto; }
   .pageTitle { padding: 50px 0; }
-  .pageTitle .innerBox { display: block; }
-  .pageTitle .innerBox > div + div { padding-left: 0; padding-right: 0; padding-top: 1.5rem; }
   .pageTitle .tit { font-size: 30px; }
   .pageTitle .text { line-height: 1.5; }
   .pageTitle .text > div + div { margin-top: 1rem; }

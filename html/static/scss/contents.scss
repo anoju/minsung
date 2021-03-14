@@ -718,3 +718,120 @@ input[type="checkbox"]{margin:0;}
         }
     }
 }
+
+.oneStopService{
+    padding:150px 0;
+    .innerBox:after{content:'';display:block;clear:both;}
+    .tit{float:left;width:33.285%;font-size:48px;line-height:1.2;margin-top:-0.25em;}
+    .cont{margin-left:33.285%;}
+    .txt{line-height:1.6;}
+    .list{
+        margin-top:95px;
+        li{
+            display:table;width:100%;
+            +li{margin-top:20px;}
+            >div{display:table-cell;}
+        }
+        .ico{
+            width:120px;
+            i{
+                display:block;width:120px;height:120px;background-repeat:no-repeat;background-position:center center;background-size:contain;
+                &.ico1{background-image: url(../images/capability/oneStopService-ico01.png);}
+                &.ico2{background-image: url(../images/capability/oneStopService-ico02.png);}
+                &.ico3{background-image: url(../images/capability/oneStopService-ico03.png);}
+                &.ico4{background-image: url(../images/capability/oneStopService-ico04.png);}
+                &.ico5{background-image: url(../images/capability/oneStopService-ico05.png);}
+            }
+        }
+        .text{padding-left:40px;vertical-align:middle;font-weight:bold;color:#111;line-height:1.6;}
+    }
+}
+
+@media screen and (max-width:767px) {
+    .oneStopService{
+        padding:60px 0;
+        .tit{float:none;width:auto;font-size:25px;margin-top:0;}
+        .cont{margin-left:0;margin-top:30px;}
+        .list{
+            margin-top:40px;
+            .ico{
+                width:80px;
+                i{
+                    display:block;width:80px;height:80px;
+                }
+            }
+            .text{padding-left:20px;}
+        }
+    }
+}
+
+.tabWrap{display:flex;justify-content:flex-end;}
+.tabmenu{
+    display:flex;
+    a {
+        display:flex; position:relative; width:220px; height:60px; padding:0 60px 0 30px; border:1px solid #ccc; border-bottom-color:#111; align-items: center; font-size:16px; color:#999;
+        + a { margin-left:-1px;}
+        &:after { content:''; display:block; position:absolute; top:50%; right:29px; width:23px; height:17px; transform: translateY(-50%); background:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' width='23px' height='17px'%3E%3Cpath fill-rule='evenodd' stroke='rgb(204, 204, 204)' stroke-width='2px' stroke-linecap='butt' stroke-linejoin='miter' fill='none' d='M2.771,6.253 L8.257,11.506 L18.131,2.050 L19.229,1.000 '/%3E%3C/svg%3E") no-repeat; background-size:contain;}
+        &.on { 
+            color:#111; font-weight:bold; border-color:#111; border-bottom-color:transparent;z-index:1;
+            &:after { background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' width='23px' height='17px'%3E%3Cpath fill-rule='evenodd' stroke='rgb(0, 0, 0)' stroke-width='2px' stroke-linecap='butt' stroke-linejoin='miter' fill='none' d='M2.771,6.253 L8.257,11.506 L18.131,2.050 L19.228,1.000 '/%3E%3C/svg%3E")}
+        }
+    }
+}
+@media (max-width:1000px) {
+    .tabWrap{justify-content:flex-start;}
+    .tabmenu{
+        display:flex;width:100%;
+        a{width:100%;}
+    }
+}
+@media (max-width:767px) {
+    .tabmenu{
+        a{
+            height:50px;padding:0 40px 0 20px;font-size:15px;
+            &:after{right:15px;width:16px;height:12px;}
+        }
+    }
+}
+
+.makePreventionTxt{
+    padding:135px 0 90px;
+    .innerBox{
+        display:flex;
+        >div{padding-right:20px;width:100%;}
+    }
+    .tit{font-size:50px;line-height:1.2;}
+    .sub{font-size:30px;line-height:1.2;margin-top:30px;}
+    .cont{
+        padding-top:150px;
+        .txt{
+            line-height:1.8;
+            +.txt{margin-top:2em;}
+        }
+    }
+}
+.makePreventionBg{
+    height:480px;margin-top:150px;background:url(../images/capability/explosion-proof-bg.png) no-repeat center center fixed;background-size:cover;
+    .img{position:relative;top:-150px;width:466px;height:404px;background:url(../images/capability/explosion-proof.png) no-repeat center center;background-size:contain;}
+}
+@media (max-width:767px) {
+    .makePreventionTxt{
+        padding:60px 0 30px;
+        .innerBox{
+            display:block;
+            >div{
+                padding-right:0;width:auto;
+                +div{margin-top:40px;}
+            }
+        }
+        .tit{font-size:28px;}
+        .sub{font-size:20px;margin-top:15px;}
+        .cont{
+            padding-top:0;
+        }
+    }
+    .makePreventionBg{
+        height:200px;margin-top:80px;background-attachment:local;
+        .img{top:-80px;width:200px;height:173px;}
+    }
+}
