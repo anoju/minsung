@@ -16,13 +16,6 @@ body.scrollLock { overflow: hidden; }
 @keyframes loadingRotate { 0% { -webkit-transform: rotate(0deg); transform: rotate(0deg); }
   100% { -webkit-transform: rotate(360deg); transform: rotate(360deg); } }
 
-/* 글자색 */
-.txtRed1 { color: #de190a; }
-
-.txtBlue1 { color: #003388; }
-
-.txtGray1 { color: #999999; }
-
 /* 숨기기 */
 .blind { overflow: hidden; position: absolute; top: 0; left: 0; width: 0; height: 0; font-size: 0; }
 
@@ -186,7 +179,15 @@ body.scrollLock { overflow: hidden; }
 
 .pageVisual.location { background-image: url(../images/visual/location.png); }
 
+.pageVisual.makePrevention { background-image: url(../images/visual/makePrevention.png); }
+
+.pageVisual.precisionParts { background-image: url(../images/visual/precisionParts.png); }
+
+.pageVisual.process { background-image: url(../images/visual/process.png); }
+
 .pageVisual.cnc { background-image: url(../images/visual/cnc.png); }
+
+.pageVisual.prevention { background-image: url(../images/visual/prevention.png); }
 
 .pageVisual.housing { background-image: url(../images/visual/housing.png); }
 
@@ -194,11 +195,13 @@ body.scrollLock { overflow: hidden; }
 
 .pageVisual.manifold { background-image: url(../images/visual/manifold.png); }
 
-.pageVisual.manifold { background-image: url(../images/visual/manifold.png); }
-
 .pageVisual.shaft { background-image: url(../images/visual/shaft.png); }
 
 .pageVisual.etcPrecision { background-image: url(../images/visual/etcPrecision.png); }
+
+.pageVisual.inquiry { background-image: url(../images/visual/inquiry.png); }
+
+.pageVisual.downloadList { background-image: url(../images/visual/downloadList.png); }
 
 /* footer */
 #footerWrap { position: relative; z-index: 50; }
