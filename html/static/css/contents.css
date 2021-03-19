@@ -393,6 +393,10 @@ input[type="radio"], input[type="checkbox"] { margin: 0; }
 
 .listTable table th.left, .listTable table td.left { text-align: left; }
 
+.listTable table th.center, .listTable table td.center { text-align: center; }
+
+.listTable table th img, .listTable table td img { max-width: 100%; }
+
 .icoFile { display: inline-block; width: 21px; height: 21px; background: url(../images/common/icoFile.png) no-repeat center center; background-size: contain; font-size: 3px; color: transparent; overflow: hidden; }
 
 .btnFile { display: inline-block; padding-left: 25px; background: url(../images/common/icoFile.png) no-repeat left center; font-size: 16px; }
@@ -620,4 +624,75 @@ input[type="radio"], input[type="checkbox"] { margin: 0; }
   .makePreventionTxt .cont { padding-top: 0; }
   .makePreventionBg { height: 200px; margin-top: 80px; background-attachment: local; }
   .makePreventionBg .img { top: -80px; width: 200px; height: 173px; } }
+
+.preventionWrap { padding: 150px 0; }
+
+.preventionWrap .preventionTitle { font-size: 48px; line-height: 1; }
+
+.preventionWrap .preventionTitle small { display: block; font-size: 30px; font-weight: normal; }
+
+.preventionWrap .preventionTitle strong { display: block; margin-top: 30px; }
+
+.preventionWrap .preventionTop { position: relative; overflow: hidden; }
+
+.preventionWrap .preventionTop:before { content: ''; display: block; position: absolute; top: 0; left: 50%; width: 50%; margin-left: 234px; height: 290px; background: #262f61; }
+
+.preventionWrap .preventionTop .preventionTopIn:after { content: ''; display: block; clear: both; }
+
+.preventionWrap .preventionTop .preventionTitle { float: left; }
+
+.preventionWrap .preventionTop .preventionTopImg { float: right; background: #262f61; }
+
+.preventionWrap .preventionTop .subTitile { margin-top: -30px; }
+
+.preventionWrap .subTitile { margin-top: 74px; font-size: 24px; color: #ffc001; font-weight: normal; }
+
+.preventionWrap .subTitile + .listTable, .preventionWrap .subTitile + .tblWrap { margin-top: 20px; }
+
+.preventionWrap .subTitile + .txt { margin-top: 7px; }
+
+.preventionWrap .subTitile + .list { margin-top: 12px; }
+
+.preventionWrap .txt { line-height: 1.6; }
+
+.preventionWrap .txt.list li { position: relative; padding-left: 15px; }
+
+.preventionWrap .txt.list li:before { content: ''; position: absolute; display: block; left: 0; top: 0.7em; width: 3px; height: 3px; border-radius: 50%; background: #131313; }
+
+.preventionWrap .txt.list li + li { margin-top: 5px; }
+
+.preventionWrap .txt + .listTable, .preventionWrap .txt + .tblWrap { margin-top: 33px; }
+
+.preventionWrap .listTable + .list, .preventionWrap .tblWrap + .list { margin-top: 47px; }
+
+.preventionWrap .tblWrap { display: -webkit-box; display: -ms-flexbox; display: flex; margin: 0 -20px; }
+
+.preventionWrap .tblWrap > div { width: 100%; padding: 0 20px; }
+
+.preventionWrap .tblWrap .tdLh { line-height: 1.8; }
+
+.preventionWrap .preventionMiddleImg { background: #efefef; padding: 70px 0; margin-top: 80px; }
+
+.preventionWrap .preventionMiddleImg .flex > div { text-align: center; }
+
+.preventionWrap .preventionMiddleImg img { max-width: 100%; }
+
+@media (max-width: 1400px) { .preventionWrap .preventionTop:before { content: none; }
+  .preventionWrap .preventionTop .preventionTopImg { margin-right: -20px; } }
+
+@media (max-width: 1200px) { .preventionWrap .preventionTop .preventionTitle { float: none; }
+  .preventionWrap .preventionTop .preventionTopImg { float: none; margin-left: 60%; margin-top: 10px; }
+  .preventionWrap .preventionTop .preventionTopImg img { max-width: 100%; } }
+
+@media (max-width: 767px) { .preventionWrap { padding: 60px 0; }
+  .preventionWrap .preventionTop .subTitile { margin-top: -23px; }
+  .preventionWrap .preventionTitle { font-size: 25px; }
+  .preventionWrap .preventionTitle small { font-size: 16px; }
+  .preventionWrap .preventionTitle strong { margin-top: 20px; }
+  .preventionWrap .subTitile { font-size: 20px; margin-top: 40px; }
+  .preventionWrap .listTable + .list, .preventionWrap .tblWrap + .list { margin-top: 27px; }
+  .preventionWrap .tblWrap { display: block; margin: 0; }
+  .preventionWrap .tblWrap > div { width: auto; padding: 0; }
+  .preventionWrap .tblWrap > div + div { margin-top: 40px; }
+  .preventionWrap .tblWrap .tdLh { line-height: 1.8; } }
 /*# sourceMappingURL=contents.css.map */
