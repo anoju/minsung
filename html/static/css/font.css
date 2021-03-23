@@ -79,9 +79,8 @@
         url('https://cdn.jsdelivr.net/gh/spoqa/spoqa-han-sans@3.1.0/Subset/SpoqaHanSansNeo/SpoqaHanSansNeo-Thin.ttf') format('truetype');
 }
 
-
 @font-face {
-    font-family: GothamPro;
+    font-family: 'Gotham';
     src:url(https://cdn.rawgit.com/mfd/f3d96ec7f0e8f034cc22ea73b3797b59/raw/856f1dbb8d807aabceb80b6d4f94b464df461b3e/GothamPro-Light.eot);
     src:url(https://cdn.rawgit.com/mfd/f3d96ec7f0e8f034cc22ea73b3797b59/raw/856f1dbb8d807aabceb80b6d4f94b464df461b3e/GothamPro-Light.woff2) format("woff2"),
         url(https://cdn.rawgit.com/mfd/f3d96ec7f0e8f034cc22ea73b3797b59/raw/856f1dbb8d807aabceb80b6d4f94b464df461b3e/GothamPro-Light.woff) format("woff"),
@@ -90,10 +89,10 @@
         url(https://cdn.rawgit.com/mfd/f3d96ec7f0e8f034cc22ea73b3797b59/raw/856f1dbb8d807aabceb80b6d4f94b464df461b3e/GothamPro-Light.eot?#iefix) format("embedded-opentype");
     font-weight: 100;
     font-style: normal;
-    unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+    unicode-range: U+0041-005A, U+0061-007A, U+0030-0039;
 }
 @font-face {
-    font-family: GothamPro;
+    font-family: 'Gotham';
     src:url(https://cdn.rawgit.com/mfd/f3d96ec7f0e8f034cc22ea73b3797b59/raw/856f1dbb8d807aabceb80b6d4f94b464df461b3e/GothamPro-LightItalic.eot);
     src:url(https://cdn.rawgit.com/mfd/f3d96ec7f0e8f034cc22ea73b3797b59/raw/856f1dbb8d807aabceb80b6d4f94b464df461b3e/GothamPro-LightItalic.woff2) format("woff2"),
         url(https://cdn.rawgit.com/mfd/f3d96ec7f0e8f034cc22ea73b3797b59/raw/856f1dbb8d807aabceb80b6d4f94b464df461b3e/GothamPro-LightItalic.woff) format("woff"),
@@ -102,10 +101,10 @@
         url(https://cdn.rawgit.com/mfd/f3d96ec7f0e8f034cc22ea73b3797b59/raw/856f1dbb8d807aabceb80b6d4f94b464df461b3e/GothamPro-LightItalic.eot?#iefix) format("embedded-opentype");
     font-weight: 100;
     font-style: italic;
-    unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+    unicode-range: U+0041-005A, U+0061-007A, U+0030-0039;
 }
 @font-face {
-    font-family: GothamPro;
+    font-family: 'Gotham';
     src:url(https://cdn.rawgit.com/mfd/f3d96ec7f0e8f034cc22ea73b3797b59/raw/856f1dbb8d807aabceb80b6d4f94b464df461b3e/GothamPro.eot);
     src:url(https://cdn.rawgit.com/mfd/f3d96ec7f0e8f034cc22ea73b3797b59/raw/856f1dbb8d807aabceb80b6d4f94b464df461b3e/GothamPro.woff2) format("woff2"),
         url(https://cdn.rawgit.com/mfd/f3d96ec7f0e8f034cc22ea73b3797b59/raw/856f1dbb8d807aabceb80b6d4f94b464df461b3e/GothamPro.woff) format("woff"),
@@ -114,10 +113,10 @@
         url(https://cdn.rawgit.com/mfd/f3d96ec7f0e8f034cc22ea73b3797b59/raw/856f1dbb8d807aabceb80b6d4f94b464df461b3e/GothamPro.eot?#iefix) format("embedded-opentype");
     font-weight: 200;
     font-style: normal;
-    unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+    unicode-range: U+0041-005A, U+0061-007A, U+0030-0039;
 }
 @font-face {
-    font-family: GothamPro;
+    font-family: 'Gotham';
     src:url(https://cdn.rawgit.com/mfd/f3d96ec7f0e8f034cc22ea73b3797b59/raw/856f1dbb8d807aabceb80b6d4f94b464df461b3e/GothamPro-Italic.eot);
     src:url(https://cdn.rawgit.com/mfd/f3d96ec7f0e8f034cc22ea73b3797b59/raw/856f1dbb8d807aabceb80b6d4f94b464df461b3e/GothamPro-Italic.woff2) format("woff2"),
         url(https://cdn.rawgit.com/mfd/f3d96ec7f0e8f034cc22ea73b3797b59/raw/856f1dbb8d807aabceb80b6d4f94b464df461b3e/GothamPro-Italic.woff) format("woff"),
@@ -126,10 +125,10 @@
         url(https://cdn.rawgit.com/mfd/f3d96ec7f0e8f034cc22ea73b3797b59/raw/856f1dbb8d807aabceb80b6d4f94b464df461b3e/GothamPro-Italic.eot?#iefix) format("embedded-opentype");
     font-weight: 200;
     font-style: italic;
-    unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+    unicode-range: U+0041-005A, U+0061-007A, U+0030-0039;
 }
 @font-face {
-    font-family: GothamPro;
+    font-family: 'Gotham';
     src:url(https://cdn.rawgit.com/mfd/f3d96ec7f0e8f034cc22ea73b3797b59/raw/856f1dbb8d807aabceb80b6d4f94b464df461b3e/GothamPro-Medium.eot);
     src:url(https://cdn.rawgit.com/mfd/f3d96ec7f0e8f034cc22ea73b3797b59/raw/856f1dbb8d807aabceb80b6d4f94b464df461b3e/GothamPro-Medium.woff2) format("woff2"),
         url(https://cdn.rawgit.com/mfd/f3d96ec7f0e8f034cc22ea73b3797b59/raw/856f1dbb8d807aabceb80b6d4f94b464df461b3e/GothamPro-Medium.woff) format("woff"),
@@ -138,10 +137,10 @@
         url(https://cdn.rawgit.com/mfd/f3d96ec7f0e8f034cc22ea73b3797b59/raw/856f1dbb8d807aabceb80b6d4f94b464df461b3e/GothamPro-Medium.eot?#iefix) format("embedded-opentype");
     font-weight: 400;
     font-style: normal;
-    unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+    unicode-range: U+0041-005A, U+0061-007A, U+0030-0039;
 }
 @font-face {
-    font-family: GothamPro;
+    font-family: 'Gotham';
     src:url(https://cdn.rawgit.com/mfd/f3d96ec7f0e8f034cc22ea73b3797b59/raw/856f1dbb8d807aabceb80b6d4f94b464df461b3e/GothamPro-MediumItalic.eot);
     src:url(https://cdn.rawgit.com/mfd/f3d96ec7f0e8f034cc22ea73b3797b59/raw/856f1dbb8d807aabceb80b6d4f94b464df461b3e/GothamPro-MediumItalic.woff2) format("woff2"),
         url(https://cdn.rawgit.com/mfd/f3d96ec7f0e8f034cc22ea73b3797b59/raw/856f1dbb8d807aabceb80b6d4f94b464df461b3e/GothamPro-MediumItalic.woff) format("woff"),
@@ -150,10 +149,10 @@
         url(https://cdn.rawgit.com/mfd/f3d96ec7f0e8f034cc22ea73b3797b59/raw/856f1dbb8d807aabceb80b6d4f94b464df461b3e/GothamPro-MediumItalic.eot?#iefix) format("embedded-opentype");
     font-weight: 400;
     font-style: italic;
-    unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+    unicode-range: U+0041-005A, U+0061-007A, U+0030-0039;
 }
 @font-face {
-    font-family: GothamPro;
+    font-family: 'Gotham';
     src:url(https://cdn.rawgit.com/mfd/f3d96ec7f0e8f034cc22ea73b3797b59/raw/856f1dbb8d807aabceb80b6d4f94b464df461b3e/GothamPro-Bold.eot);
     src:url(https://cdn.rawgit.com/mfd/f3d96ec7f0e8f034cc22ea73b3797b59/raw/856f1dbb8d807aabceb80b6d4f94b464df461b3e/GothamPro-Bold.woff2) format("woff2"),
         url(https://cdn.rawgit.com/mfd/f3d96ec7f0e8f034cc22ea73b3797b59/raw/856f1dbb8d807aabceb80b6d4f94b464df461b3e/GothamPro-Bold.woff) format("woff"),
@@ -162,10 +161,10 @@
         url(https://cdn.rawgit.com/mfd/f3d96ec7f0e8f034cc22ea73b3797b59/raw/856f1dbb8d807aabceb80b6d4f94b464df461b3e/GothamPro-Bold.eot?#iefix) format("embedded-opentype");
     font-weight: 600;
     font-style: normal;
-    unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+    unicode-range: U+0041-005A, U+0061-007A, U+0030-0039;
 }
 @font-face {
-    font-family: GothamPro;
+    font-family: 'Gotham';
     src:url(https://cdn.rawgit.com/mfd/f3d96ec7f0e8f034cc22ea73b3797b59/raw/856f1dbb8d807aabceb80b6d4f94b464df461b3e/GothamPro-BoldItalic.eot);
     src:url(https://cdn.rawgit.com/mfd/f3d96ec7f0e8f034cc22ea73b3797b59/raw/856f1dbb8d807aabceb80b6d4f94b464df461b3e/GothamPro-BoldItalic.woff2) format("woff2"),
         url(https://cdn.rawgit.com/mfd/f3d96ec7f0e8f034cc22ea73b3797b59/raw/856f1dbb8d807aabceb80b6d4f94b464df461b3e/GothamPro-BoldItalic.woff) format("woff"),
@@ -174,10 +173,10 @@
         url(https://cdn.rawgit.com/mfd/f3d96ec7f0e8f034cc22ea73b3797b59/raw/856f1dbb8d807aabceb80b6d4f94b464df461b3e/GothamPro-BoldItalic.eot?#iefix) format("embedded-opentype");
     font-weight: 600;
     font-style: italic;
-    unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+    unicode-range: U+0041-005A, U+0061-007A, U+0030-0039;
 }
 @font-face {
-    font-family: GothamPro;
+    font-family: 'Gotham';
     src:url(https://cdn.rawgit.com/mfd/f3d96ec7f0e8f034cc22ea73b3797b59/raw/856f1dbb8d807aabceb80b6d4f94b464df461b3e/GothamPro-Black.eot);
     src:url(https://cdn.rawgit.com/mfd/f3d96ec7f0e8f034cc22ea73b3797b59/raw/856f1dbb8d807aabceb80b6d4f94b464df461b3e/GothamPro-Black.woff2) format("woff2"),
         url(https://cdn.rawgit.com/mfd/f3d96ec7f0e8f034cc22ea73b3797b59/raw/856f1dbb8d807aabceb80b6d4f94b464df461b3e/GothamPro-Black.woff) format("woff"),
@@ -186,10 +185,10 @@
         url(https://cdn.rawgit.com/mfd/f3d96ec7f0e8f034cc22ea73b3797b59/raw/856f1dbb8d807aabceb80b6d4f94b464df461b3e/GothamPro-Black.eot?#iefix) format("embedded-opentype");
     font-weight: 800;
     font-style: normal;
-    unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+    unicode-range: U+0041-005A, U+0061-007A, U+0030-0039;
 }
 @font-face {
-    font-family: GothamPro;
+    font-family: 'Gotham';
     src:url(https://cdn.rawgit.com/mfd/f3d96ec7f0e8f034cc22ea73b3797b59/raw/856f1dbb8d807aabceb80b6d4f94b464df461b3e/GothamPro-BlackItalic.eot);
     src:url(https://cdn.rawgit.com/mfd/f3d96ec7f0e8f034cc22ea73b3797b59/raw/856f1dbb8d807aabceb80b6d4f94b464df461b3e/GothamPro-BlackItalic.woff2) format("woff2"),
         url(https://cdn.rawgit.com/mfd/f3d96ec7f0e8f034cc22ea73b3797b59/raw/856f1dbb8d807aabceb80b6d4f94b464df461b3e/GothamPro-BlackItalic.woff) format("woff"),
@@ -198,9 +197,8 @@
         url(https://cdn.rawgit.com/mfd/f3d96ec7f0e8f034cc22ea73b3797b59/raw/856f1dbb8d807aabceb80b6d4f94b464df461b3e/GothamPro-BlackItalic.eot?#iefix) format("embedded-opentype");
     font-weight: 800;
     font-style: italic;
-    unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+    unicode-range: U+0041-005A, U+0061-007A, U+0030-0039;
 }
-
 /*
 @font-face {
 	font-family: 'Gotham';
@@ -212,7 +210,7 @@
 		url('https://cdn.jsdelivr.net/npm/gotham-fonts@1.0.3/fonts/GothamRounded-Light.svg#GothamRounded-Light') format('svg');
 	font-weight: 300;
 	font-style: normal;
-    unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+    unicode-range: U+0041-005A, U+0061-007A, U+0030-0039;
 }
 @font-face {
 	font-family: 'Gotham';
@@ -224,7 +222,7 @@
 		url('https://cdn.jsdelivr.net/npm/gotham-fonts@1.0.3/fonts/GothamRounded-Medium.svg#GothamRounded-Medium') format('svg');
 	font-weight: normal;
 	font-style: normal;
-    unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+    unicode-range: U+0041-005A, U+0061-007A, U+0030-0039;
 }
 @font-face {
 	font-family: 'Gotham';
@@ -236,7 +234,7 @@
 		url('https://cdn.jsdelivr.net/npm/gotham-fonts@1.0.3/fonts/GothamRounded-Bold.svg#GothamRounded-Bold') format('svg');
 	font-weight: bold;
 	font-style: normal;
-    unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+    unicode-range: U+0041-005A, U+0061-007A, U+0030-0039;
 }
 */
 /*
