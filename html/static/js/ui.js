@@ -30,9 +30,6 @@ $(function(){
 	* content
 	* ============================== */
 	$(window).load(function(){
-		setTimeout(function() { 
-			window.scrollTo(0, 1);
-		}, 100);
 		if($('.loading').length){
 			$('.loading').addClass('off').delay(500).queue(function(next){
 				$('.loading').remove();

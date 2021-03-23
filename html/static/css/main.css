@@ -152,7 +152,7 @@
     [class*=mainSec] .textBox .text{font-size:16px;margin-top:20px;}
     .mainSec01 .visualBg video, .mainSec01 .visualBg .mask{display:none;}
     .mainSec01 .innerBox{padding-top:60px;}
-    .mainSec01 .mainSwiper .slideItem{height:calc(100vh - 60px);min-height:auto;padding:0 20px;}
+    .mainSec01 .mainSwiper .slideItem{height:calc(100vh - 110px);min-height:auto;padding:0 20px;}
     .mainSec01 .mainSwiper .slideItem .tit > strong{font-size:35px;}
     .mainSec01 .mainSwiper .slideItem .txt{margin-top:20px;}
     .mainSec01 .mainSwiper .slideItem .link{margin-top:30px;}
