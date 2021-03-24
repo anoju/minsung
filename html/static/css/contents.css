@@ -9,7 +9,7 @@
     .button{height:50px;padding:0 10px;font-size:18px;}
     .button.large{height:60px;}
 }
-.btnClickEf{position:relative;overflow:hiddne;}
+.btnClickEf{position:relative;overflow:hidden;}
 .btnClickIn{display:block;position:absolute;background:rgba(0, 0, 0, 0.2);border-radius:100%;-webkit-transform:scale(0);transform:scale(0);}
 .btnClickIn.animate{-webkit-animation:btnClickEf 0.65s linear;animation:btnClickEf 0.65s linear;}
 @-webkit-keyframes btnClickEf{
@@ -92,16 +92,17 @@ input[type="radio"], input[type="checkbox"]{margin:0;}
 .imgAboutList .img img{width:100%;-webkit-transition:0.5s ease;transition:0.5s ease;}
 .imgAboutList .text{padding:0 20px 0 40px;}
 .imgAboutList .text .tit{font-size:48px;font-weight:bold;letter-spacing:-0.02em;}
-.imgAboutList .text .summary{margin-top:35px;}
+.imgAboutList .text .summary{margin-top:35px;font-weight:200;}
 .imgAboutList ul li:nth-child(odd) .flex{-webkit-box-orient:horizontal;-webkit-box-direction:reverse;-ms-flex-direction:row-reverse;flex-direction:row-reverse;}
 .imgAboutList ul li:nth-child(odd) .text{padding:0 40px 0 20px;}
 .imgAboutList ul li:hover .img img{-webkit-transform:scale(1.1);transform:scale(1.1);}
 @media screen and (max-width:767px){
     .imgAboutList{padding:60px 0;}
-    .imgAboutList .text{padding:0 10px 0 20px;}
+    .imgAboutList .text{padding:20px 10px 0 !important;}
     .imgAboutList .text .tit{font-size:25px;}
-    .imgAboutList .text .summary{margin-top:10px;}
-    .imgAboutList ul li:nth-child(odd) .text{padding:0 20px 0 10px;}
+    .imgAboutList .text .summary{margin-top:5px;}
+    .imgAboutList ul li .flex{display:block;}
+    .imgAboutList ul li+li{margin-top:40px;}
 }
 .company{position:relative;overflow:hidden;padding:123px 0;}
 .company .bg{position:absolute;left:0;top:0;width:50%;height:100%;background:#ffc001;overflow:hidden;}
@@ -350,6 +351,7 @@ input[type="radio"], input[type="checkbox"]{margin:0;}
 .processWrap .cont{padding-left:35px;padding-top:10px;font-size:20px;line-height:1.5;}
 .processWrap .cont dt{font-weight:bold;}
 .processWrap .cont .th{margin-top:30px;text-transform:uppercase;}
+/*
 @media screen and (max-width:1400px){
     .processWrap .list ol{margin-right:0;}
     .processWrap .list ol > li{width:25%;padding-bottom:50px;padding-right:50px;}
@@ -374,6 +376,7 @@ input[type="radio"], input[type="checkbox"]{margin:0;}
     .processWrap .circle .num{margin-bottom:10px;}
     .processWrap .cont{font-size:16px;padding-left:0;}
 }
+*/
 .oneStopService{padding:150px 0;}
 .oneStopService .innerBox:after{content:'';display:block;clear:both;}
 .oneStopService .tit{float:left;width:33.285%;font-size:48px;line-height:1.2;margin-top:-0.25em;}
@@ -445,7 +448,7 @@ input[type="radio"], input[type="checkbox"]{margin:0;}
 .preventionWrap .preventionTop:before{content:'';display:block;position:absolute;top:0;left:50%;width:50%;margin-left:234px;height:290px;background:#262f61;}
 .preventionWrap .preventionTop .preventionTopIn:after{content:'';display:block;clear:both;}
 .preventionWrap .preventionTop .preventionTitle{float:left;}
-.preventionWrap .preventionTop .preventionTopImg{float:right;background:#262f61;}
+.preventionWrap .preventionTop .preventionTopImg{float:right;background:#262f61;text-align:center;}
 .preventionWrap .preventionTop .subTitile{margin-top:-30px;}
 .preventionWrap .subTitile{margin-top:74px;font-size:24px;color:#ffc001;font-weight:normal;}
 .preventionWrap .subTitile + .listTable, .preventionWrap .subTitile + .tblWrap{margin-top:20px;}
@@ -474,7 +477,9 @@ input[type="radio"], input[type="checkbox"]{margin:0;}
 }
 @media (max-width:767px){
     .preventionWrap{padding:60px 0;}
-    .preventionWrap .preventionTop .subTitile{margin-top:-23px;}
+    .preventionWrap .preventionTop .preventionTopImg{margin-left:-20px;margin-top:20px;}
+    .preventionWrap .preventionTop .preventionTopImg img{width:233px;}
+    .preventionWrap .preventionTop .subTitile{margin-top:30px;}
     .preventionWrap .preventionTitle{font-size:25px;}
     .preventionWrap .preventionTitle small{font-size:16px;}
     .preventionWrap .preventionTitle strong{margin-top:20px;}

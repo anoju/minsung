@@ -67,7 +67,7 @@
 .mainSec02 .imgBox .box:hover img{-webkit-transform:scale(1.15);transform:scale(1.15);}
 .mainSec02 .imgBox .box .txt{position:absolute;left:0;bottom:0;width:100%;padding:13.73%;color:#fff;}
 .mainSec02 .imgBox .box .txt strong{display:block;font-size:24px;margin-bottom:17px;}
-.mainSec02 .imgBox .box .txt div{font-weight:300;text-transform:uppercase;}
+.mainSec02 .imgBox .box .txt div{font-weight:200;text-transform:uppercase;}
 .mainSec02 .sec2{padding:84px 0;}
 .mainSec02 .sec2 .innerBox{display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-pack:justify;-ms-flex-pack:justify;justify-content:space-between;}
 .mainSec02 .sec2 .innerBox .link a{display:inline-block;font-size:34px;}
@@ -89,7 +89,7 @@
 .mainSec03 .productBox .box:hover:after{-webkit-transform:rotate(720deg);transform:rotate(720deg);}
 .mainSec03 .productBox .box .txt{position:absolute;left:0;top:0;width:100%;padding:12.27% 9.09% 0;color:#131313;text-align:left;}
 .mainSec03 .productBox .box .txt strong{display:block;font-size:42px;margin-bottom:12px;}
-.mainSec03 .productBox .box .txt div{text-transform:uppercase;}
+.mainSec03 .productBox .box .txt div{text-transform:uppercase;font-weight:200;}
 .mainSec04{position:relative;background:url(../images/main/main-sec04-bg.png) no-repeat center center;background-size:cover;}
 .mainSec04 .textBox > a{position:relative;display:block;padding:130px 0 150px;z-index:1;}
 .mainSec04 .textBox > a .text{position:relative;padding-right:70px;}
@@ -150,7 +150,7 @@
 @media screen and (max-width:767px){
     [class*=mainSec] .textBox h1{font-size:35px;}
     [class*=mainSec] .textBox .text{font-size:16px;margin-top:20px;}
-    .mainSec01 .visualBg video, .mainSec01 .visualBg .mask{display:none;}
+    /*.mainSec01 .visualBg video, .mainSec01 .visualBg .mask{display:none;}*/
     .mainSec01 .innerBox{padding-top:60px;}
     .mainSec01 .mainSwiper .slideItem{height:calc(100vh - 110px);min-height:auto;padding:0 20px;}
     .mainSec01 .mainSwiper .slideItem .tit > strong{font-size:35px;}

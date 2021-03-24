@@ -80,7 +80,7 @@
 }
 
 @font-face {
-    font-family: 'Gmarket Sans';
+    font-family: 'Gmarket';
     font-weight:200;
     src:local('Gmarket Sans Light'),
         url('../fonts/gmarket/GmarketSansLight.woff2') format('woff2'),

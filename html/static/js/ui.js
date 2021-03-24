@@ -242,8 +242,8 @@ var main = {
 		var $videoW = ($visualH/ratio.h)*ratio.v;
 		var $videoH = ($visualW/ratio.v)*ratio.h;
 		if(isMobile){
-			$video.remove(); //모바일에서 비디오 삭제(사용자 데이터 잡아먹을수 있음)
-			$mask.remove();
+			//$video.remove(); //모바일에서 비디오 삭제(사용자 데이터 잡아먹을수 있음)
+			//$mask.remove();
 		}else{
 			if($winW < $videoW){
 				$video.css({
