@@ -180,6 +180,7 @@
     .mainSec02 .sec2 .innerBox .txt{padding-left:0;margin-top:20px;}
     .mainSec03{padding:60px 0;}
     .mainSec03 .productBox{margin-top:40px;}
+    .mainSec03 .productBox .box .txt{padding:15px;font-size:13px;}
     .mainSec03 .textBox .text{padding-right:50px;}
     .mainSec03 .textBox .text:after{width:40px;height:10px;}
     .mainSec04 .textBox > a{padding:60px 0;}
