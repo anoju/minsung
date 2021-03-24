@@ -80,122 +80,29 @@
 }
 
 @font-face {
-    font-family: 'Gotham';
-    src:url(https://cdn.rawgit.com/mfd/f3d96ec7f0e8f034cc22ea73b3797b59/raw/856f1dbb8d807aabceb80b6d4f94b464df461b3e/GothamPro-Light.eot);
-    src:url(https://cdn.rawgit.com/mfd/f3d96ec7f0e8f034cc22ea73b3797b59/raw/856f1dbb8d807aabceb80b6d4f94b464df461b3e/GothamPro-Light.woff2) format("woff2"),
-        url(https://cdn.rawgit.com/mfd/f3d96ec7f0e8f034cc22ea73b3797b59/raw/856f1dbb8d807aabceb80b6d4f94b464df461b3e/GothamPro-Light.woff) format("woff"),
-        url(https://cdn.rawgit.com/mfd/f3d96ec7f0e8f034cc22ea73b3797b59/raw/856f1dbb8d807aabceb80b6d4f94b464df461b3e/GothamPro-Light.ttf) format("truetype"),
-        url(https://cdn.rawgit.com/mfd/f3d96ec7f0e8f034cc22ea73b3797b59/raw/856f1dbb8d807aabceb80b6d4f94b464df461b3e/GothamPro-Light.svg#GothamPro-Light) format("svg"),
-        url(https://cdn.rawgit.com/mfd/f3d96ec7f0e8f034cc22ea73b3797b59/raw/856f1dbb8d807aabceb80b6d4f94b464df461b3e/GothamPro-Light.eot?#iefix) format("embedded-opentype");
-    font-weight: 100;
-    font-style: normal;
+    font-family: 'Gmarket Sans';
+    font-weight:200;
+    src:local('Gmarket Sans Light'),
+        url('../fonts/gmarket/GmarketSansLight.woff2') format('woff2'),
+        url('../fonts/gmarket/GmarketSansLight.woff') format('woff'),
+        url('../fonts/gmarket/GmarketSansLight.ttf') format('truetype');
     unicode-range: U+0041-005A, U+0061-007A, U+0030-0039;
 }
 @font-face {
-    font-family: 'Gotham';
-    src:url(https://cdn.rawgit.com/mfd/f3d96ec7f0e8f034cc22ea73b3797b59/raw/856f1dbb8d807aabceb80b6d4f94b464df461b3e/GothamPro-LightItalic.eot);
-    src:url(https://cdn.rawgit.com/mfd/f3d96ec7f0e8f034cc22ea73b3797b59/raw/856f1dbb8d807aabceb80b6d4f94b464df461b3e/GothamPro-LightItalic.woff2) format("woff2"),
-        url(https://cdn.rawgit.com/mfd/f3d96ec7f0e8f034cc22ea73b3797b59/raw/856f1dbb8d807aabceb80b6d4f94b464df461b3e/GothamPro-LightItalic.woff) format("woff"),
-        url(https://cdn.rawgit.com/mfd/f3d96ec7f0e8f034cc22ea73b3797b59/raw/856f1dbb8d807aabceb80b6d4f94b464df461b3e/GothamPro-LightItalic.ttf) format("truetype"),
-        url(https://cdn.rawgit.com/mfd/f3d96ec7f0e8f034cc22ea73b3797b59/raw/856f1dbb8d807aabceb80b6d4f94b464df461b3e/GothamPro-LightItalic.svg#GothamPro-LightItalic) format("svg"),
-        url(https://cdn.rawgit.com/mfd/f3d96ec7f0e8f034cc22ea73b3797b59/raw/856f1dbb8d807aabceb80b6d4f94b464df461b3e/GothamPro-LightItalic.eot?#iefix) format("embedded-opentype");
-    font-weight: 100;
-    font-style: italic;
+    font-family: 'Gmarket';
+    font-weight:normal;
+    src:local('Gmarket Sans Medium'),
+        url('../fonts/gmarket/GmarketSansMedium.woff2') format('woff2'),
+        url('../fonts/gmarket/GmarketSansMedium.woff') format('woff'),
+        url('../fonts/gmarket/GmarketSansMedium.ttf') format('truetype');
     unicode-range: U+0041-005A, U+0061-007A, U+0030-0039;
 }
 @font-face {
-    font-family: 'Gotham';
-    src:url(https://cdn.rawgit.com/mfd/f3d96ec7f0e8f034cc22ea73b3797b59/raw/856f1dbb8d807aabceb80b6d4f94b464df461b3e/GothamPro.eot);
-    src:url(https://cdn.rawgit.com/mfd/f3d96ec7f0e8f034cc22ea73b3797b59/raw/856f1dbb8d807aabceb80b6d4f94b464df461b3e/GothamPro.woff2) format("woff2"),
-        url(https://cdn.rawgit.com/mfd/f3d96ec7f0e8f034cc22ea73b3797b59/raw/856f1dbb8d807aabceb80b6d4f94b464df461b3e/GothamPro.woff) format("woff"),
-        url(https://cdn.rawgit.com/mfd/f3d96ec7f0e8f034cc22ea73b3797b59/raw/856f1dbb8d807aabceb80b6d4f94b464df461b3e/GothamPro.ttf) format("truetype"),
-        url(https://cdn.rawgit.com/mfd/f3d96ec7f0e8f034cc22ea73b3797b59/raw/856f1dbb8d807aabceb80b6d4f94b464df461b3e/GothamPro.svg#GothamPro) format("svg"),
-        url(https://cdn.rawgit.com/mfd/f3d96ec7f0e8f034cc22ea73b3797b59/raw/856f1dbb8d807aabceb80b6d4f94b464df461b3e/GothamPro.eot?#iefix) format("embedded-opentype");
-    font-weight: 200;
-    font-style: normal;
-    unicode-range: U+0041-005A, U+0061-007A, U+0030-0039;
-}
-@font-face {
-    font-family: 'Gotham';
-    src:url(https://cdn.rawgit.com/mfd/f3d96ec7f0e8f034cc22ea73b3797b59/raw/856f1dbb8d807aabceb80b6d4f94b464df461b3e/GothamPro-Italic.eot);
-    src:url(https://cdn.rawgit.com/mfd/f3d96ec7f0e8f034cc22ea73b3797b59/raw/856f1dbb8d807aabceb80b6d4f94b464df461b3e/GothamPro-Italic.woff2) format("woff2"),
-        url(https://cdn.rawgit.com/mfd/f3d96ec7f0e8f034cc22ea73b3797b59/raw/856f1dbb8d807aabceb80b6d4f94b464df461b3e/GothamPro-Italic.woff) format("woff"),
-        url(https://cdn.rawgit.com/mfd/f3d96ec7f0e8f034cc22ea73b3797b59/raw/856f1dbb8d807aabceb80b6d4f94b464df461b3e/GothamPro-Italic.ttf) format("truetype"),
-        url(https://cdn.rawgit.com/mfd/f3d96ec7f0e8f034cc22ea73b3797b59/raw/856f1dbb8d807aabceb80b6d4f94b464df461b3e/GothamPro-Italic.svg#GothamPro-Italic) format("svg"),
-        url(https://cdn.rawgit.com/mfd/f3d96ec7f0e8f034cc22ea73b3797b59/raw/856f1dbb8d807aabceb80b6d4f94b464df461b3e/GothamPro-Italic.eot?#iefix) format("embedded-opentype");
-    font-weight: 200;
-    font-style: italic;
-    unicode-range: U+0041-005A, U+0061-007A, U+0030-0039;
-}
-@font-face {
-    font-family: 'Gotham';
-    src:url(https://cdn.rawgit.com/mfd/f3d96ec7f0e8f034cc22ea73b3797b59/raw/856f1dbb8d807aabceb80b6d4f94b464df461b3e/GothamPro-Medium.eot);
-    src:url(https://cdn.rawgit.com/mfd/f3d96ec7f0e8f034cc22ea73b3797b59/raw/856f1dbb8d807aabceb80b6d4f94b464df461b3e/GothamPro-Medium.woff2) format("woff2"),
-        url(https://cdn.rawgit.com/mfd/f3d96ec7f0e8f034cc22ea73b3797b59/raw/856f1dbb8d807aabceb80b6d4f94b464df461b3e/GothamPro-Medium.woff) format("woff"),
-        url(https://cdn.rawgit.com/mfd/f3d96ec7f0e8f034cc22ea73b3797b59/raw/856f1dbb8d807aabceb80b6d4f94b464df461b3e/GothamPro-Medium.ttf) format("truetype"),
-        url(https://cdn.rawgit.com/mfd/f3d96ec7f0e8f034cc22ea73b3797b59/raw/856f1dbb8d807aabceb80b6d4f94b464df461b3e/GothamPro-Medium.svg#GothamPro-Medium) format("svg"),
-        url(https://cdn.rawgit.com/mfd/f3d96ec7f0e8f034cc22ea73b3797b59/raw/856f1dbb8d807aabceb80b6d4f94b464df461b3e/GothamPro-Medium.eot?#iefix) format("embedded-opentype");
-    font-weight: 400;
-    font-style: normal;
-    unicode-range: U+0041-005A, U+0061-007A, U+0030-0039;
-}
-@font-face {
-    font-family: 'Gotham';
-    src:url(https://cdn.rawgit.com/mfd/f3d96ec7f0e8f034cc22ea73b3797b59/raw/856f1dbb8d807aabceb80b6d4f94b464df461b3e/GothamPro-MediumItalic.eot);
-    src:url(https://cdn.rawgit.com/mfd/f3d96ec7f0e8f034cc22ea73b3797b59/raw/856f1dbb8d807aabceb80b6d4f94b464df461b3e/GothamPro-MediumItalic.woff2) format("woff2"),
-        url(https://cdn.rawgit.com/mfd/f3d96ec7f0e8f034cc22ea73b3797b59/raw/856f1dbb8d807aabceb80b6d4f94b464df461b3e/GothamPro-MediumItalic.woff) format("woff"),
-        url(https://cdn.rawgit.com/mfd/f3d96ec7f0e8f034cc22ea73b3797b59/raw/856f1dbb8d807aabceb80b6d4f94b464df461b3e/GothamPro-MediumItalic.ttf) format("truetype"),
-        url(https://cdn.rawgit.com/mfd/f3d96ec7f0e8f034cc22ea73b3797b59/raw/856f1dbb8d807aabceb80b6d4f94b464df461b3e/GothamPro-MediumItalic.svg#GothamPro-MediumItalic) format("svg"),
-        url(https://cdn.rawgit.com/mfd/f3d96ec7f0e8f034cc22ea73b3797b59/raw/856f1dbb8d807aabceb80b6d4f94b464df461b3e/GothamPro-MediumItalic.eot?#iefix) format("embedded-opentype");
-    font-weight: 400;
-    font-style: italic;
-    unicode-range: U+0041-005A, U+0061-007A, U+0030-0039;
-}
-@font-face {
-    font-family: 'Gotham';
-    src:url(https://cdn.rawgit.com/mfd/f3d96ec7f0e8f034cc22ea73b3797b59/raw/856f1dbb8d807aabceb80b6d4f94b464df461b3e/GothamPro-Bold.eot);
-    src:url(https://cdn.rawgit.com/mfd/f3d96ec7f0e8f034cc22ea73b3797b59/raw/856f1dbb8d807aabceb80b6d4f94b464df461b3e/GothamPro-Bold.woff2) format("woff2"),
-        url(https://cdn.rawgit.com/mfd/f3d96ec7f0e8f034cc22ea73b3797b59/raw/856f1dbb8d807aabceb80b6d4f94b464df461b3e/GothamPro-Bold.woff) format("woff"),
-        url(https://cdn.rawgit.com/mfd/f3d96ec7f0e8f034cc22ea73b3797b59/raw/856f1dbb8d807aabceb80b6d4f94b464df461b3e/GothamPro-Bold.ttf) format("truetype"),
-        url(https://cdn.rawgit.com/mfd/f3d96ec7f0e8f034cc22ea73b3797b59/raw/856f1dbb8d807aabceb80b6d4f94b464df461b3e/GothamPro-Bold.svg#GothamPro-Bold) format("svg"),
-        url(https://cdn.rawgit.com/mfd/f3d96ec7f0e8f034cc22ea73b3797b59/raw/856f1dbb8d807aabceb80b6d4f94b464df461b3e/GothamPro-Bold.eot?#iefix) format("embedded-opentype");
-    font-weight: 600;
-    font-style: normal;
-    unicode-range: U+0041-005A, U+0061-007A, U+0030-0039;
-}
-@font-face {
-    font-family: 'Gotham';
-    src:url(https://cdn.rawgit.com/mfd/f3d96ec7f0e8f034cc22ea73b3797b59/raw/856f1dbb8d807aabceb80b6d4f94b464df461b3e/GothamPro-BoldItalic.eot);
-    src:url(https://cdn.rawgit.com/mfd/f3d96ec7f0e8f034cc22ea73b3797b59/raw/856f1dbb8d807aabceb80b6d4f94b464df461b3e/GothamPro-BoldItalic.woff2) format("woff2"),
-        url(https://cdn.rawgit.com/mfd/f3d96ec7f0e8f034cc22ea73b3797b59/raw/856f1dbb8d807aabceb80b6d4f94b464df461b3e/GothamPro-BoldItalic.woff) format("woff"),
-        url(https://cdn.rawgit.com/mfd/f3d96ec7f0e8f034cc22ea73b3797b59/raw/856f1dbb8d807aabceb80b6d4f94b464df461b3e/GothamPro-BoldItalic.ttf) format("truetype"),
-        url(https://cdn.rawgit.com/mfd/f3d96ec7f0e8f034cc22ea73b3797b59/raw/856f1dbb8d807aabceb80b6d4f94b464df461b3e/GothamPro-BoldItalic.svg#GothamPro-BoldItalic) format("svg"),
-        url(https://cdn.rawgit.com/mfd/f3d96ec7f0e8f034cc22ea73b3797b59/raw/856f1dbb8d807aabceb80b6d4f94b464df461b3e/GothamPro-BoldItalic.eot?#iefix) format("embedded-opentype");
-    font-weight: 600;
-    font-style: italic;
-    unicode-range: U+0041-005A, U+0061-007A, U+0030-0039;
-}
-@font-face {
-    font-family: 'Gotham';
-    src:url(https://cdn.rawgit.com/mfd/f3d96ec7f0e8f034cc22ea73b3797b59/raw/856f1dbb8d807aabceb80b6d4f94b464df461b3e/GothamPro-Black.eot);
-    src:url(https://cdn.rawgit.com/mfd/f3d96ec7f0e8f034cc22ea73b3797b59/raw/856f1dbb8d807aabceb80b6d4f94b464df461b3e/GothamPro-Black.woff2) format("woff2"),
-        url(https://cdn.rawgit.com/mfd/f3d96ec7f0e8f034cc22ea73b3797b59/raw/856f1dbb8d807aabceb80b6d4f94b464df461b3e/GothamPro-Black.woff) format("woff"),
-        url(https://cdn.rawgit.com/mfd/f3d96ec7f0e8f034cc22ea73b3797b59/raw/856f1dbb8d807aabceb80b6d4f94b464df461b3e/GothamPro-Black.ttf) format("truetype"),
-        url(https://cdn.rawgit.com/mfd/f3d96ec7f0e8f034cc22ea73b3797b59/raw/856f1dbb8d807aabceb80b6d4f94b464df461b3e/GothamPro-Black.svg#GothamPro-Black) format("svg"),
-        url(https://cdn.rawgit.com/mfd/f3d96ec7f0e8f034cc22ea73b3797b59/raw/856f1dbb8d807aabceb80b6d4f94b464df461b3e/GothamPro-Black.eot?#iefix) format("embedded-opentype");
-    font-weight: 800;
-    font-style: normal;
-    unicode-range: U+0041-005A, U+0061-007A, U+0030-0039;
-}
-@font-face {
-    font-family: 'Gotham';
-    src:url(https://cdn.rawgit.com/mfd/f3d96ec7f0e8f034cc22ea73b3797b59/raw/856f1dbb8d807aabceb80b6d4f94b464df461b3e/GothamPro-BlackItalic.eot);
-    src:url(https://cdn.rawgit.com/mfd/f3d96ec7f0e8f034cc22ea73b3797b59/raw/856f1dbb8d807aabceb80b6d4f94b464df461b3e/GothamPro-BlackItalic.woff2) format("woff2"),
-        url(https://cdn.rawgit.com/mfd/f3d96ec7f0e8f034cc22ea73b3797b59/raw/856f1dbb8d807aabceb80b6d4f94b464df461b3e/GothamPro-BlackItalic.woff) format("woff"),
-        url(https://cdn.rawgit.com/mfd/f3d96ec7f0e8f034cc22ea73b3797b59/raw/856f1dbb8d807aabceb80b6d4f94b464df461b3e/GothamPro-BlackItalic.ttf) format("truetype"),
-        url(https://cdn.rawgit.com/mfd/f3d96ec7f0e8f034cc22ea73b3797b59/raw/856f1dbb8d807aabceb80b6d4f94b464df461b3e/GothamPro-BlackItalic.svg#GothamPro-BlackItalic) format("svg"),
-        url(https://cdn.rawgit.com/mfd/f3d96ec7f0e8f034cc22ea73b3797b59/raw/856f1dbb8d807aabceb80b6d4f94b464df461b3e/GothamPro-BlackItalic.eot?#iefix) format("embedded-opentype");
-    font-weight: 800;
-    font-style: italic;
+    font-family: 'Gmarket';
+    font-weight:bold;
+    src:local('Gmarket Sans Bold'),
+        url('../fonts/gmarket/GmarketSansBold.woff2') format('woff2'),
+        url('../fonts/gmarket/GmarketSansBold.woff') format('woff'),
+        url('../fonts/gmarket/GmarketSansBold.ttf') format('truetype');
     unicode-range: U+0041-005A, U+0061-007A, U+0030-0039;
 }
