@@ -12,7 +12,7 @@
 #container.main{margin-top:0;margin-bottom:0;}
 [class*=mainSec]{position:relative;}
 [class*=mainSec] .textBox{color:#fff;word-break:break-all;}
-[class*=mainSec] .textBox h1{font-size:80px;letter-spacing:-0.02em;line-height:1.18;}
+[class*=mainSec] .textBox h1{font-size:80px;letter-spacing:-0.03em;line-height:1.18;}
 [class*=mainSec] .textBox .text{margin-top:30px;font-size:18px;}
 [class*=mainSec] a.textBox{display:block;}
 [class*=mainSec]:after{content:'';display:block;clear:both;}
